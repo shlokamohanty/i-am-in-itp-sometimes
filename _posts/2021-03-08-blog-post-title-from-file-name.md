@@ -1,32 +1,139 @@
-## Blog Post Title From First Header
+---
 
-Due to a plugin called `jekyll-titles-from-headings` which is supported by GitHub Pages by default. The above header (in the markdown file) will be automatically used as the pages title.
-
-If the file does not start with a header, then the post title will be derived from the filename.
-
-This is a sample blog post. You can talk about all sorts of fun things here.
+layout: post 
+title: "your title here" 
+subtitle: "optional — shows as italic line under the title" 
+date: 2000-01-01 
+tags: [academic-ongoing]
+published:
 
 ---
 
-### This is a header
+# ── CLASS NOTES (inside notes section) ─────────────────────────
 
-#### Some T-SQL Code
+# tags: [prototyping-ongoing] (prototyping electronic devices — ongoing)
 
-```tsql
-SELECT This, [Is], A, Code, Block -- Using SSMS style syntax highlighting
-    , REVERSE('abc')
-FROM dbo.SomeTable s
-    CROSS JOIN dbo.OtherTable o;
+# tags: [prototyping-past] (prototyping electronic devices — past)
+
+# tags: [networks-ongoing] (understanding networks — ongoing)
+
+# tags: [networks-past] (understanding networks — past)
+
+# tags: [fabrication-ongoing] (fabricating mechanical automatons — ongoing)
+
+# tags: [fabrication-past] (fabricating mechanical automatons — past)
+
+# tags: [thesis-ongoing] (thesis — ongoing)
+
+# tags: [thesis-past] (thesis — past)
+
+
+# ── GENERAL NOTES ──────────────────────────────────────────────
+
+# tags: [academic-ongoing] (academic — ongoing)
+
+# tags: [academic-past] (academic — past)
+
+# tags: [academic] (academic — general)
+
+# tags: [interests-ongoing] (interests — ongoing)
+
+# tags: [interests-past] (interests — past)
+
+# tags: [interests] (interests — general)
+
+
+# ── REFLECTIONS ────────────────────────────────────────────────
+
+# tags: [work-ongoing] (work/school — ongoing)
+
+# tags: [work-reflection] (work/school — past)
+
+# tags: [ongoing] (general — ongoing)
+
+# tags: [reflections] (general — past)
+
+# mood: proud → proud of these
+
+# mood: raw → published anyway, too vulnerable
+
+# mood: spill → unfiltered, hurried, reactive
+
+# mood: unsure → not proud of but it exists
+
+# mood: vulnerable → vulnerable
+
+# (leave mood out if none fit)
+
+## published: false
+
+write your opening paragraph here. just plain text, no special syntax needed.
+
+a blank line between paragraphs makes a new paragraph.
+
+## this is a section header
+
+### this is a smaller header
+
+_italic text_ **bold text** ~~strikethrough~~
+
+> this is a blockquote. good for pulling out a line or a thought.
+
+**links**
+
+[link text](https://example.com/)
+
+**images**
+
+plain image, centered automatically:
+
+![alt text](https://your-image-url.jpg/)
+
+image with a caption (use figure tags):
+
+<figure> ![alt text](https://your-image-url.jpg) <figcaption>your caption here — date, place, note, whatever</figcaption> </figure>
+
+for github-hosted images (uploaded via github issues or attachments):
+
+![alt text](https://user-images.githubusercontent.com/...)
+
+**lists**
+
+unordered:
+
+- one thing
+- another thing
+- one more thing
+
+ordered:
+
+1. first
+2. second
+3. third
+
+**code**
+
+inline code: `some code here`
+
+code block:
+
+```
+plain code block, no highlighting
 ```
 
-#### Some PowerShell Code
+with language highlighting:
 
-```powershell
-Write-Host "This is a powershell Code block";
-
-# There are many other languages you can use, but the style has to be loaded first
-
-ForEach ($thing in $things) {
-    Write-Output "It highlights it using the GitHub style"
-}
+```python
+def hello():
+    print("hello")
 ```
+
+**horizontal divider**
+
+---
+
+**footnote-style aside**
+
+use a divider + italic for end-of-post notes:
+
+_a note added later: ..._
