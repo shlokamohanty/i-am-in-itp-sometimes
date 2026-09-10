@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: 'JuliaMono';
+      font-weight: 400;
+      font-display: swap;
+      src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono@0.062/webfonts/JuliaMono-Regular.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: 'JuliaMono';
+      font-weight: 700;
+      font-display: swap;
+      src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono@0.062/webfonts/JuliaMono-Bold.woff2") format("woff2");
+    }
+  </style>
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --mono: 'Space Mono', monospace;
+      --serif: 'JuliaMono', 'Space Mono', monospace;
+      --bg: #c9c8c5;
+      --card-bg: #ffffff;
+      --text: #111111;
+      --text-mid: #444440;
+      --text-faint: rgba(17,17,17,0.45);
+      --pin: #b8895a;
+      --border: rgba(17,17,17,0.12);
+    }
+
+    html, body {
+      min-height: 100vh;
+      font-family: var(--serif);
+      -webkit-font-smoothing: antialiased;
+      background-color: transparent;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("{{ '/IMG_2357_3.JPG' | relative_url }}");
+      background-size: contain;
+      background-color: #ffffff;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 1;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .side-illustration { display: none; }
+
+    /* ── HEADER ── */
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 1.4rem 2.5rem 1rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    .site-title {
+      font-family: var(--mono);
+      font-size: .9rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .site-nav { display: flex; gap: 2rem; }
+
+    .site-nav a {
+      font-family: var(--mono);
+      font-size: .7rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--text);
+      text-decoration: none;
+      transition: opacity .15s;
+    }
+
+    .site-nav a:hover { opacity: 0.55; }
+    .site-nav a.active { opacity: 1; }
+
+    /* ── BOARD ── */
+    .board {
+      position: relative;
+      z-index: 1;
+      padding: 1.2rem 2rem 5rem;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      min-height: calc(100vh - 60px);
+    }
+
+    .board::-webkit-scrollbar { height: 6px; }
+    .board::-webkit-scrollbar-track { background: rgba(17,17,17,0.06); }
+    .board::-webkit-scrollbar-thumb { background: rgba(17,17,17,0.2); border-radius: 3px; }
+    .board::-webkit-scrollbar-thumb:hover { background: rgba(17,17,17,0.4); }
+
+    /* ── INTRO ── */
+    .board-intro-cards {
+      position: relative;
+      z-index: 10;
+      max-width: 560px;
+      margin: 0 0 1.5rem .25rem;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+    }
+
+    .intro-note {
+      display: inline-block;
+      background: var(--card-bg);
+      border-radius: 6px 8px 9px 7px / 7px 9px 8px 8px;
+      padding: .35rem .85rem .4rem;
+    }
+
+    .intro-note p {
+      font-family: var(--serif);
+      font-size: .88rem;
+      line-height: 1.75;
+      color: var(--text);
+    }
+
+    .intro-note p + p { margin-top: .75rem; }
+
+    .intro-note.subtitle-note {
+      font-family: var(--mono);
+      font-size: .62rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+    }
+
+    .intro-note.body-note { max-width: 520px; }
+
+    /* ── CARD GRID ── */
+    .card-grid {
+      position: relative;
+      width: 1200px;
+      min-width: 1200px;
+      margin: 1rem auto 0;
+      height: 720px;
+    }
+
+    .string-layer {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      overflow: visible;
+    }
+
+    .card { z-index: 3; }
+
+    /* ── CARDS ── */
+    .card {
+      position: absolute;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      transition: transform .18s ease, filter .18s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05) rotate(0deg) !important;
+      filter: brightness(1.04);
+      z-index: 20;
+    }
+
+    .card-paper {
+      width: 300px;
+      min-height: 200px;
+      position: relative;
+      background: var(--card-bg);
+      border-radius: 16px 20px 18px 22px / 20px 16px 22px 18px;
+      box-shadow: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.6rem;
+    }
+
+    .card-paper::before { display: none; }
+
+    .card-content { text-align: center; z-index: 1; }
+
+    .card-category {
+      font-family: var(--mono);
+      font-size: .6rem;
+      font-weight: 400;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: .55rem;
+    }
+
+    .card-title {
+      font-family: var(--serif);
+      font-size: .8rem;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--text);
+      letter-spacing: .01em;
+    }
+
+    .card-count {
+      font-family: var(--mono);
+      font-size: .6rem;
+      color: var(--text-faint);
+      margin-top: .6rem;
+      letter-spacing: .04em;
+    }
+
+    .pin { display: none; }
+
+    /* ── SECTION PAGES ── */
+    .section-page {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      overflow-y: auto;
+      background-color: #ffffff;
+      padding: 2rem 2.5rem 4rem;
+    }
+
+    .section-page::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("{{ '/illustrations.jpg' | relative_url }}");
+      background-size: contain;
+      background-color: #ffffff;
+      background-position: right;
+      background-repeat: no-repeat;
+      opacity: 1;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .section-page.active { display: block; }
+
+    .section-back {
+      font-family: var(--mono);
+      font-size: .68rem;
+      letter-spacing: .06em;
+      color: var(--text-mid);
+      cursor: pointer;
+      margin-bottom: 2rem;
+      display: inline-block;
+      background: none;
+      border: none;
+      padding: 0;
+      position: relative;
+      z-index: 1;
+      transition: opacity .15s;
+    }
+
+    .section-back:hover { opacity: 0.6; }
+
+    .section-header { margin-bottom: 2rem; position: relative; z-index: 1; }
+
+    .section-header h2 {
+      font-family: var(--mono);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: .03em;
+    }
+
+    .section-posts { max-width: 640px; position: relative; z-index: 1; }
+
+    .section-post-list { list-style: none; }
+    .section-post-list li { border-bottom: 1px solid var(--border); }
+    .section-post-list li:first-child { border-top: 1px solid var(--border); }
+
+    .section-post-row {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      padding: .75rem .3rem;
+      text-decoration: none;
+      border-radius: 3px;
+      transition: background .12s;
+    }
+
+    .section-post-row:hover { background: rgba(17,17,17,0.05); }
+
+    .section-post-date {
+      font-family: var(--mono);
+      font-size: .62rem;
+      color: var(--text-mid);
+      min-width: 90px;
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+
+    .section-post-body { flex: 1; min-width: 0; }
+
+    .section-post-title {
+      font-family: var(--mono);
+      font-size: .8rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.4;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .section-post-subtitle {
+      font-family: var(--serif);
+      font-size: .72rem;
+      color: var(--text-mid);
+      margin-top: .15rem;
+    }
+
+    .section-post-tag {
+      font-family: var(--mono);
+      font-size: .58rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      border: 1px solid rgba(17,17,17,0.2);
+      border-radius: 2px;
+      padding: .15rem .4rem;
+      flex-shrink: 0;
+      align-self: center;
+      white-space: nowrap;
+    }
+    .section-post-tag:first-of-type { margin-left: auto; }
+    .section-post-tag + .section-post-tag { margin-left: .4rem; }
+
+    .section-post-tag.mood-proud,
+    .section-post-tag.mood-raw,
+    .section-post-tag.mood-spill,
+    .section-post-tag.mood-unsure,
+    .section-post-tag.mood-vulnerable {
+      color: #8a5c2a;
+      border-color: rgba(184,137,90,0.5);
+    }
+
+    .subtag-group { margin-bottom: 1.75rem; }
+
+    .subtag-group-label {
+      font-family: var(--mono);
+      font-size: .56rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      border-left: 1.5px solid rgba(17,17,17,0.2);
+      padding-left: .5rem;
+      margin-bottom: .5rem;
+    }
+
+    /* ── FOOTER ── */
+    .site-footer-board {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      padding: .75rem 2.5rem;
+      font-family: var(--mono);
+      font-size: .6rem;
+      color: rgba(17,17,17,0.4);
+      display: flex;
+      gap: .75rem;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .site-footer-board a {
+      pointer-events: all;
+      color: rgba(17,17,17,0.4);
+      text-decoration: none;
+      transition: opacity .15s;
+    }
+
+    .site-footer-board a:hover { opacity: 0.7; }
+
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      .board-intro-cards { margin: 0 0 1.2rem .1rem; max-width: 100%; }
+      .intro-note p { font-size: .82rem; }
+      .card-grid {
+        width: 100% !important;
+        min-width: 0 !important;
+        height: auto !important;
+        margin: .5rem 0 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1.5rem !important;
+        padding-bottom: 3rem;
+      }
+      .card {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: 86vw !important;
+        max-width: 340px !important;
+      }
+      .card-paper { width: 100% !important; min-height: 140px !important; }
+      #card-classnotes  { transform: rotate(-1.2deg) !important; }
+      #card-generalnotes { transform: rotate(1.4deg) !important; }
+      #card-reflections  { transform: rotate(-0.8deg) !important; }
+      .site-header { padding: 1rem 1.25rem; }
+      .section-page { padding: 1.5rem 1.25rem 4rem; }
+      .section-post-row { flex-wrap: wrap; }
+      .section-post-title { white-space: normal; }
+      .section-post-date { min-width: 100%; margin-bottom: .15rem; }
+      .section-post-body { flex: 1 1 100%; }
+      .section-post-tag:first-of-type { margin-left: 0; margin-top: .4rem; }
+      .section-post-tag + .section-post-tag { margin-top: .4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="side-illustration side-left"></div>
+  <div class="side-illustration side-right"></div>
+
+  <header class="site-header">
+    <a href="{{ '/' | relative_url }}" class="site-title" id="home-link">{{ site.title }}</a>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}" id="home-nav" class="active">home</a>
+      <a href="{{ '/archive.html' | relative_url }}">archive</a>
+    </nav>
+  </header>
+
+  <div class="board" id="board">
+
+    <div class="board-intro-cards">
+      <div class="intro-note subtitle-note">notes, reflections, from itp</div>
+      <div class="intro-note body-note">
+        <p>hi, i'm shloka. currently in my second-year, i draw and write quite often. i still don't know where to sit right now - on the floor. almost every day, i relearn the definition of a word. if you're bored, ask me about my word of the day.</p>
+      </div>
+    </div>
+
+    <div class="card-grid">
+      <svg class="string-layer" id="string-layer" aria-hidden="true"></svg>
+
+      {% comment %} CLASS NOTES — prototyping, networks, fabrication, thesis {% endcomment %}
+      {% assign _c1 = site.posts | where_exp: "p", "p.tags contains 'prototyping-ongoing'" %}
+      {% assign _c2 = site.posts | where_exp: "p", "p.tags contains 'prototyping-past'" %}
+      {% assign _c3 = site.posts | where_exp: "p", "p.tags contains 'networks-ongoing'" %}
+      {% assign _c4 = site.posts | where_exp: "p", "p.tags contains 'networks-past'" %}
+      {% assign _c5 = site.posts | where_exp: "p", "p.tags contains 'fabrication-ongoing'" %}
+      {% assign _c6 = site.posts | where_exp: "p", "p.tags contains 'fabrication-past'" %}
+      {% assign _c7 = site.posts | where_exp: "p", "p.tags contains 'thesis-ongoing'" %}
+      {% assign _c8 = site.posts | where_exp: "p", "p.tags contains 'thesis-past'" %}
+      {% assign all_classnotes = _c1 | concat: _c2 | concat: _c3 | concat: _c4 | concat: _c5 | concat: _c6 | concat: _c7 | concat: _c8 | uniq %}
+
+      {% comment %} GENERAL NOTES — academic, interests {% endcomment %}
+      {% assign _g1 = site.posts | where_exp: "p", "p.tags contains 'academic-ongoing'" %}
+      {% assign _g2 = site.posts | where_exp: "p", "p.tags contains 'academic-past'" %}
+      {% assign _g3 = site.posts | where_exp: "p", "p.tags contains 'interests-ongoing'" %}
+      {% assign _g4 = site.posts | where_exp: "p", "p.tags contains 'interests-past'" %}
+      {% assign _g5 = site.posts | where_exp: "p", "p.tags contains 'academic'" %}
+      {% assign _g6 = site.posts | where_exp: "p", "p.tags contains 'interests'" %}
+      {% assign all_generalnotes = _g1 | concat: _g2 | concat: _g3 | concat: _g4 | concat: _g5 | concat: _g6 | uniq %}
+
+      {% comment %} REFLECTIONS — work-ongoing, work-reflection, ongoing, reflections {% endcomment %}
+      {% assign _r1 = site.posts | where_exp: "p", "p.tags contains 'work-ongoing'" %}
+      {% assign _r2 = site.posts | where_exp: "p", "p.tags contains 'work-reflection'" %}
+      {% assign _r3 = site.posts | where_exp: "p", "p.tags contains 'ongoing'" %}
+      {% assign _r4 = site.posts | where_exp: "p", "p.tags contains 'reflections'" %}
+      {% assign all_reflections = _r1 | concat: _r2 | concat: _r3 | concat: _r4 | uniq %}
+
+      <a class="card" id="card-classnotes"
+         style="top: 30px; left: 28%; transform: rotate(-2.5deg); z-index: 4"
+         onclick="showSection('classnotes'); return false;" href="#">
+        <div class="card-paper">
+          <div class="card-content">
+            <div class="card-category">class notes</div>
+            <div class="card-title">second semester</div>
+            <div class="card-count">{{ all_classnotes.size }} entries</div>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" id="card-generalnotes"
+         style="top: 60px; left: 58%; transform: rotate(2.2deg); z-index: 3"
+         onclick="showSection('generalnotes'); return false;" href="#">
+        <div class="card-paper" style="border-radius: 22px 16px 20px 18px / 18px 22px 16px 20px;">
+          <div class="card-content">
+            <div class="card-category">general notes</div>
+            <div class="card-title">academic</div>
+            <div class="card-count">{{ all_generalnotes.size }} entries</div>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" id="card-reflections"
+         style="top: 380px; left: 38%; transform: rotate(-1.2deg); z-index: 2"
+         onclick="showSection('reflections'); return false;" href="#">
+        <div class="card-paper" style="border-radius: 18px 22px 14px 20px / 20px 14px 22px 16px;">
+          <div class="card-content">
+            <div class="card-category">reflections</div>
+            <div class="card-title">thoughts on work, school, the process</div>
+            <div class="card-count">{{ all_reflections.size }} entries</div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- CLASS NOTES -->
+  <div class="section-page" id="section-classnotes">
+    <button class="section-back" onclick="hideSection()">← back to board</button>
+    <div class="section-header"><h2>class notes</h2></div>
+    <div class="section-posts">
+      {% assign seen = "" %}
+
+      {% assign on_prototyping   = site.posts | where_exp: "p", "p.tags contains 'prototyping-ongoing'" %}
+      {% assign past_prototyping = site.posts | where_exp: "p", "p.tags contains 'prototyping-past'" %}
+      {% assign on_networks      = site.posts | where_exp: "p", "p.tags contains 'networks-ongoing'" %}
+      {% assign past_networks    = site.posts | where_exp: "p", "p.tags contains 'networks-past'" %}
+      {% assign on_fabrication   = site.posts | where_exp: "p", "p.tags contains 'fabrication-ongoing'" %}
+      {% assign past_fabrication = site.posts | where_exp: "p", "p.tags contains 'fabrication-past'" %}
+      {% assign on_thesis        = site.posts | where_exp: "p", "p.tags contains 'thesis-ongoing'" %}
+      {% assign past_thesis      = site.posts | where_exp: "p", "p.tags contains 'thesis-past'" %}
+
+      {% assign all_prototyping = on_prototyping | concat: past_prototyping | uniq %}
+      {% assign all_networks    = on_networks    | concat: past_networks    | uniq %}
+      {% assign all_fabrication = on_fabrication | concat: past_fabrication | uniq %}
+      {% assign all_thesis_cn   = on_thesis      | concat: past_thesis      | uniq %}
+
+      {% if all_prototyping.size > 0 %}
+      <div class="subtag-group"><div class="subtag-group-label">prototyping electronic devices</div>
+        <ul class="section-post-list">{% for post in all_prototyping %}{% unless seen contains post.url %}{% assign seen = seen | append: post.url | append: "," %}
+          <li><a href="{{ post.url | relative_url }}" class="section-post-row"><span class="section-post-date">{{ post.date | date: "%b %d, %Y" }}</span><div class="section-post-body"><div class="section-post-title">{{ post.title }}</div>{% if post.subtitle %}<div class="section-post-subtitle">{{ post.subtitle }}</div>{% endif %}</div>{% if post.mood %}{% if post.mood contains 'proud' %}<span class="section-post-tag mood-proud">proud</span>{% endif %}{% if post.mood contains 'raw' %}<span class="section-post-tag mood-raw">raw</span>{% endif %}{% if post.mood contains 'spill' %}<span class="section-post-tag mood-spill">spill</span>{% endif %}{% if post.mood contains 'vulnerable' %}<span class="section-post-tag mood-vulnerable">vulnerable</span>{% endif %}{% if post.mood contains 'unsure' %}<span class="section-post-tag mood-unsure">unsure</span>{% endif %}{% endif %}{% if post.tags.size > 0 %}<span class="section-post-tag">{{ post.tags.last | downcase }}</span>{% endif %}</a></li>
+        {% endunless %}{% endfor %}</ul></div>
+      {% endif %}
+
+      {% if all_networks.size > 0 %}
+      <div class="subtag-group"><div class="subtag-group-label">understanding networks</div>
+        <ul class="section-post-list">{% for post in all_networks %}{% unless seen contains post.url %}{% assign seen = seen | append: post.url | append: "," %}
+          <li><a href="{{ post.url | relative_url }}" class="section-post-row"><span class="section-post-date">{{ post.date | date: "%b %d, %Y" }}</span><div class="section-post-body"><div class="section-post-title">{{ post.title }}</div>{% if post.subtitle %}<div class="section-post-subtitle">{{ post.subtitle }}</div>{% endif %}</div>{% if post.mood %}{% if post.mood contains 'proud' %}<span class="section-post-tag mood-proud">proud</span>{% endif %}{% if post.mood contains 'raw' %}<span class="section-post-tag mood-raw">raw</span>{% endif %}{% if post.mood contains 'spill' %}<span class="section-post-tag mood-spill">spill</span>{% endif %}{% if post.mood contains 'vulnerable' %}<span class="section-post-tag mood-vulnerable">vulnerable</span>{% endif %}{% if post.mood contains 'unsure' %}<span class="section-post-tag mood-unsure">unsure</span>{% endif %}{% endif %}{% if post.tags.size > 0 %}<span class="section-post-tag">{{ post.tags.last | downcase }}</span>{% endif %}</a></li>
+        {% endunless %}{% endfor %}</ul></div>
+      {% endif %}
+
+      {% if all_fabrication.size > 0 %}
+      <div class="subtag-group"><div class="subtag-group-label">fabricating mechanical automatons</div>
+        <ul class="section-post-list">{% for post in all_fabrication %}{% unless seen contains post.url %}{% assign seen = seen | append: post.url | append: "," %}
+          <li><a href="{{ post.url | relative_url }}" class="section-post-row"><span class="section-post-date">{{ post.date | date: "%b %d, %Y" }}</span><div class="section-post-body"><div class="section-post-title">{{ post.title }}</div>{% if post.subtitle %}<div class="section-post-subtitle">{{ post.subtitle }}</div>{% endif %}</div>{% if post.mood %}{% if post.mood contains 'proud' %}<span class="section-post-tag mood-proud">proud</span>{% endif %}{% if post.mood contains 'raw' %}<span class="section-post-tag mood-raw">raw</span>{% endif %}{% if post.mood contains 'spill' %}<span class="section-post-tag mood-spill">spill</span>{% endif %}{% if post.mood contains 'vulnerable' %}<span class="section-post-tag mood-vulnerable">vulnerable</span>{% endif %}{% if post.mood contains 'unsure' %}<span class="section-post-tag mood-unsure">unsure</span>{% endif %}{% endif %}{% if post.tags.size > 0 %}<span class="section-post-tag">{{ post.tags.last | downcase }}</span>{% endif %}</a></li>
+        {% endunless %}{% endfor %}</ul></div>
+      {% endif %}
+
+      {% if all_thesis_cn.size > 0 %}
+      <div class="subtag-group"><div class="subtag-group-label">thesis</div>
+        <ul class="section-post-list">{% for post in all_thesis_cn %}{% unless seen contains post.url %}{% assign seen = seen | append: post.url | append: "," %}
+          <li><a href="{{ post.url | relative_url }}" class="section-post-row"><span class="section-post-date">{{ post.date | date: "%b %d, %Y" }}</span><div class="section-post-body"><div class="section-post-title">{{ post.title }}</div>{% if post.subtitle %}<div class="section-post-subtitle">{{ post.subtitle }}</div>{% endif %}</div>{% if post.mood %}{% if post.mood contains 'proud' %}<span class="section-post-tag mood-proud">proud</span>{% endif %}{% if post.mood contains 'raw' %}<span class="section-post-tag mood-raw">raw</span>{% endif %}{% if post.mood contains 'spill' %}<span class="section-post-tag mood-spill">spill</span>{% endif %}{% if post.mood contains 'vulnerable' %}<span class="section-post-tag mood-vulnerable">vulnerable</span>{% endif %}{% if post.mood contains 'unsure' %}<span class="section-post-tag mood-unsure">unsure</span>{% endif %}{% endif %}{% if post.tags.size > 0 %}<span class="section-post-tag">{{ post.tags.last | downcase }}</span>{% endif %}</a></li>
+        {% endunless %}{% endfor %}</ul></div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- GENERAL NOTES -->
+  <div class="section-page" id="section-generalnotes">
+    <button class="section-back" onclick="hideSection()">← back to board</button>
+    <div class="section-header"><h2>general notes</h2></div>
+    <div class="section-posts">
+      {% assign seen2 = "" %}
+
+      {% assign gn_academic_on   = site.posts | where_exp: "p", "p.tags contains 'academic-ongoing'" %}
+      {% assign gn_academic_past = site.posts | where_exp: "p", "p.tags contains 'academic-past'" %}
+      {% assign gn_academic_gen  = site.posts | where_exp: "p", "p.tags contains 'academic'" %}
+      {% assign gn_interests_on  = site.posts | where_exp: "p", "p.tags contains 'interests-ongoing'" %}
+      {% assign gn_interests_past= site.posts | where_exp: "p", "p.tags contains 'interests-past'" %}
+      {% assign gn_interests_gen = site.posts | where_exp: "p", "p.tags contains 'interests'" %}
+
+      {% assign all_academic_gn  = gn_academic_on | concat: gn_academic_past | concat: gn_academic_gen | uniq %}
+      {% assign all_interests_gn = gn_interests_on | concat: gn_interests_past | concat: gn_interests_gen | uniq %}
+
+      {% if all_academic_gn.size > 0 %}
+      <div class="subtag-group"><div class="subtag-group-label">academic</div>
+        <ul class="section-post-list">{% for post in all_academic_gn %}{% unless seen2 contains post.url %}{% assign seen2 = seen2 | append: post.url | append: "," %}
+          <li><a href="{{ post.url | relative_url }}" class="section-post-row"><span class="section-post-date">{{ post.date | date: "%b %d, %Y" }}</span><div class="section-post-body"><div class="section-post-title">{{ post.title }}</div>{% if post.subtitle %}<div class="section-post-subtitle">{{ post.subtitle }}</div>{% endif %}</div>{% if post.mood %}{% if post.mood contains 'proud' %}<span class="section-post-tag mood-proud">proud</span>{% endif %}{% if post.mood contains 'raw' %}<span class="section-post-tag mood-raw">raw</span>{% endif %}{% if post.mood contains 'spill' %}<span class="section-post-tag mood-spill">spill</span>{% endif %}{% if post.mood contains 'vulnerable' %}<span class="section-post-tag mood-vulnerable">vulnerable</span>{% endif %}{% if post.mood contains 'unsure' %}<span class="section-post-tag mood-unsure">unsure</span>{% endif %}{% endif %}{% if post.tags.size > 0 %}<span class="section-post-tag">{{ post.tags.last | downcase }}</span>{% endif %}</a></li>
+        {% endunless %}{% endfor %}</ul></div>
+      {% endif %}
+
+      {% if all_interests_gn.size > 0 %}
+      <div class="subtag-group"><div class="subtag-group-label">interests</div>
+        <ul class="section-post-list">{% for post in all_interests_gn %}{% unless seen2 contains post.url %}{% assign seen2 = seen2 | append: post.url | append: "," %}
+          <li><a href="{{ post.url | relative_url }}" class="section-post-row"><span class="section-post-date">{{ post.date | date: "%b %d, %Y" }}</span><div class="section-post-body"><div class="section-post-title">{{ post.title }}</div>{% if post.subtitle %}<div class="section-post-subtitle">{{ post.subtitle }}</div>{% endif %}</div>{% if post.mood %}{% if post.mood contains 'proud' %}<span class="section-post-tag mood-proud">proud</span>{% endif %}{% if post.mood contains 'raw' %}<span class="section-post-tag mood-raw">raw</span>{% endif %}{% if post.mood contains 'spill' %}<span class="section-post-tag mood-spill">spill</span>{% endif %}{% if post.mood contains 'vulnerable' %}<span class="section-post-tag mood-vulnerable">vulnerable</span>{% endif %}{% if post.mood contains 'unsure' %}<span class="section-post-tag mood-unsure">unsure</span>{% endif %}{% endif %}{% if post.tags.size > 0 %}<span class="section-post-tag">{{ post.tags.last | downcase }}</span>{% endif %}</a></li>
+        {% endunless %}{% endfor %}</ul></div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- REFLECTIONS -->
+  <div class="section-page" id="section-reflections">
+    <button class="section-back" onclick="hideSection()">← back to board</button>
+    <div class="section-header"><h2>reflections</h2></div>
+    <div class="section-posts">
+      {% assign seen3 = "" %}
+
+      {% assign _ref1 = site.posts | where_exp: "p", "p.tags contains 'work-ongoing'" %}
+      {% assign _ref2 = site.posts | where_exp: "p", "p.tags contains 'work-reflection'" %}
+      {% assign _ref3 = site.posts | where_exp: "p", "p.tags contains 'ongoing'" %}
+      {% assign _ref4 = site.posts | where_exp: "p", "p.tags contains 'reflections'" %}
+      {% assign all_ref_posts = _ref1 | concat: _ref2 | concat: _ref3 | concat: _ref4 | uniq %}
+
+      <ul class="section-post-list">{% for post in all_ref_posts %}{% unless seen3 contains post.url %}{% assign seen3 = seen3 | append: post.url | append: "," %}
+        <li><a href="{{ post.url | relative_url }}" class="section-post-row"><span class="section-post-date">{{ post.date | date: "%b %d, %Y" }}</span><div class="section-post-body"><div class="section-post-title">{{ post.title }}</div>{% if post.subtitle %}<div class="section-post-subtitle">{{ post.subtitle }}</div>{% endif %}</div>{% if post.mood %}{% if post.mood contains 'proud' %}<span class="section-post-tag mood-proud">proud</span>{% endif %}{% if post.mood contains 'raw' %}<span class="section-post-tag mood-raw">raw</span>{% endif %}{% if post.mood contains 'spill' %}<span class="section-post-tag mood-spill">spill</span>{% endif %}{% if post.mood contains 'vulnerable' %}<span class="section-post-tag mood-vulnerable">vulnerable</span>{% endif %}{% if post.mood contains 'unsure' %}<span class="section-post-tag mood-unsure">unsure</span>{% endif %}{% endif %}{% if post.tags.size > 0 %}<span class="section-post-tag">{{ post.tags.last | downcase }}</span>{% endif %}</a></li>
+      {% endunless %}{% endfor %}</ul>
+    </div>
+  </div>
+
+  <div class="site-footer-board">
+    <span>{{ site.author }} · {{ site.title }}</span>
+    <span>·</span>
+    <a href="{{ '/feed.xml' | relative_url }}">rss</a>
+  </div>
+
+  <script>
+    function showSection(name) {
+      document.getElementById('board').style.display = 'none';
+      document.querySelector('.site-footer-board').style.display = 'none';
+      document.getElementById('section-' + name).classList.add('active');
+      window.scrollTo(0, 0);
+    }
+
+    function hideSection() {
+      document.querySelectorAll('.section-page').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      document.getElementById('board').style.display = 'block';
+      document.querySelector('.site-footer-board').style.display = 'flex';
+      window.scrollTo(0, 0);
+    }
+
+    function handleHomeClick(e) {
+      var anyActive = document.querySelector('.section-page.active');
+      if (anyActive) { e.preventDefault(); hideSection(); }
+    }
+    document.getElementById('home-link').addEventListener('click', handleHomeClick);
+    var homeNav = document.getElementById('home-nav');
+    if (homeNav) homeNav.addEventListener('click', handleHomeClick);
+  </script>
+
+</body>
+</html>
