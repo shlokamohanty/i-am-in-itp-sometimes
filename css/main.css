@@ -26,15 +26,15 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:        #ffffff;
+  --bg:        #c9c8c5;
   --bg-raised: #f0efec;
   --bg-hover:  #e8e7e4;
   --card-bg:   #ffffff;
-  --text:      #111111;
-  --muted:     #555550;
+  --text:      #3b2010;
+  --muted:     #6b4226;
   --faint:     rgba(17,17,17,0.13);
-  --accent:    #b85f78;
-  --accent-h:  #8a5c2a;
+  --accent:    #b8895a;
+  --accent-h:  #7a5020;
   --mono:      'Space Mono', 'Courier New', monospace;
   --serif:     'JuliaMono', 'Space Mono', monospace;
 }
