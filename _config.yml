@@ -2,8 +2,6 @@ title: "i am in itp sometimes"
 author: "shloka"
 description: "notes, reflections, from itp"
 
-github_username: "shlokamohanty"
-
 rss: rss
 
 kramdown:
@@ -18,9 +16,22 @@ titles_from_headings:
   strip_title: true
   collections: true
 
+# ── Post tag conventions ───────────────────────────────────────────────
+# Add one of these tags to the front matter of each post to sort it:
+#   tags: notes
+#   tags: reflections
+#   tags: writings
+#
+# For "finished writings" you can also add a form:
+#   form: essay        (shows as a small badge on the index)
+#   form: prose
+#   form: poem
+# ──────────────────────────────────────────────────────────────────────
+
 defaults:
   - scope:
       path: ""
-      type: post
+      type: posts
     values:
-      tags: Other
+      layout: post
+      tags: notes
