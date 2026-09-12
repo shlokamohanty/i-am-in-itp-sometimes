@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-09-11-fabricating-class-1.md",
+                "file": "2026-09-11-networks-class-1.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2026-09-11-fabricating-class-1"
+              "title": "2026-09-11-networks-class-1"
             }
           }
         ]
@@ -190,10 +190,10 @@
   },
   "active": "c036b17f7e23b0e7",
   "lastOpenFiles": [
-    "2026-09-11-prototyping-class-2.md",
-    "2026-09-11-networks-class-1.md",
     "2026-09-11-prototyping-class-1.md",
+    "2026-09-11-networks-class-1.md",
     "2026-09-11-fabricating-class-1.md",
+    "2026-09-11-prototyping-class-2.md",
     "2021-03-08-blog-post-title-from-file-name.md"
   ]
 }
