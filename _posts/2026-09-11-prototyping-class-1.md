@@ -6,6 +6,8 @@ date: 2026-09-11
 tags: prototyping-ongoing
 ---
 
+Learnt a lot of technical things that I didn't know earlier.
+
 ### resources
 - 'Art of Electronics' — book
 - Oshpark — manufacturing
