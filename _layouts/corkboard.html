@@ -462,7 +462,9 @@
       {% assign _c6 = site.posts | where_exp: "p", "p.tags contains 'fabrication-past'" %}
       {% assign _c7 = site.posts | where_exp: "p", "p.tags contains 'thesis-ongoing'" %}
       {% assign _c8 = site.posts | where_exp: "p", "p.tags contains 'thesis-past'" %}
-      {% assign all_classnotes = _c1 | concat: _c2 | concat: _c3 | concat: _c4 | concat: _c5 | concat: _c6 | concat: _c7 | concat: _c8 | uniq %}
+      {% assign _c9 = site.posts | where_exp: "p", "p.tags contains 'time-ongoing'" %}
+      {% assign _c10 = site.posts | where_exp: "p", "p.tags contains 'time-past'" %}
+      {% assign all_classnotes = _c1 | concat: _c2 | concat: _c3 | concat: _c4 | concat: _c5 | concat: _c6 | concat: _c7 | concat: _c8 | concat: _c9 | concat: _c10 | uniq %}
 
       {% comment %} GENERAL NOTES — academic, interests {% endcomment %}
       {% assign _g1 = site.posts | where_exp: "p", "p.tags contains 'academic-ongoing'" %}
@@ -534,11 +536,14 @@
       {% assign past_fabrication = site.posts | where_exp: "p", "p.tags contains 'fabrication-past'" %}
       {% assign on_thesis        = site.posts | where_exp: "p", "p.tags contains 'thesis-ongoing'" %}
       {% assign past_thesis      = site.posts | where_exp: "p", "p.tags contains 'thesis-past'" %}
+      {% assign on_time          = site.posts | where_exp: "p", "p.tags contains 'time-ongoing'" %}
+      {% assign past_time        = site.posts | where_exp: "p", "p.tags contains 'time-past'" %}
 
       {% assign all_prototyping = on_prototyping | concat: past_prototyping | uniq %}
       {% assign all_networks    = on_networks    | concat: past_networks    | uniq %}
       {% assign all_fabrication = on_fabrication | concat: past_fabrication | uniq %}
       {% assign all_thesis_cn   = on_thesis      | concat: past_thesis      | uniq %}
+      {% assign all_time        = on_time        | concat: past_time        | uniq %}
 
       {% if all_prototyping.size > 0 %}
       <div class="subtag-group"><div class="subtag-group-label">prototyping electronic devices</div>
@@ -564,6 +569,13 @@
       {% if all_thesis_cn.size > 0 %}
       <div class="subtag-group"><div class="subtag-group-label">thesis</div>
         <ul class="section-post-list">{% for post in all_thesis_cn %}{% unless seen contains post.url %}{% assign seen = seen | append: post.url | append: "," %}
+          <li><a href="{{ post.url | relative_url }}" class="section-post-row"><span class="section-post-date">{{ post.date | date: "%b %d, %Y" }}</span><div class="section-post-body"><div class="section-post-title">{{ post.title }}</div>{% if post.subtitle %}<div class="section-post-subtitle">{{ post.subtitle }}</div>{% endif %}</div>{% if post.mood %}{% if post.mood contains 'proud' %}<span class="section-post-tag mood-proud">proud</span>{% endif %}{% if post.mood contains 'raw' %}<span class="section-post-tag mood-raw">raw</span>{% endif %}{% if post.mood contains 'spill' %}<span class="section-post-tag mood-spill">spill</span>{% endif %}{% if post.mood contains 'vulnerable' %}<span class="section-post-tag mood-vulnerable">vulnerable</span>{% endif %}{% if post.mood contains 'unsure' %}<span class="section-post-tag mood-unsure">unsure</span>{% endif %}{% endif %}{% if post.tags.size > 0 %}<span class="section-post-tag">{{ post.tags.last | downcase }}</span>{% endif %}</a></li>
+        {% endunless %}{% endfor %}</ul></div>
+      {% endif %}
+
+      {% if all_time.size > 0 %}
+      <div class="subtag-group"><div class="subtag-group-label">time</div>
+        <ul class="section-post-list">{% for post in all_time %}{% unless seen contains post.url %}{% assign seen = seen | append: post.url | append: "," %}
           <li><a href="{{ post.url | relative_url }}" class="section-post-row"><span class="section-post-date">{{ post.date | date: "%b %d, %Y" }}</span><div class="section-post-body"><div class="section-post-title">{{ post.title }}</div>{% if post.subtitle %}<div class="section-post-subtitle">{{ post.subtitle }}</div>{% endif %}</div>{% if post.mood %}{% if post.mood contains 'proud' %}<span class="section-post-tag mood-proud">proud</span>{% endif %}{% if post.mood contains 'raw' %}<span class="section-post-tag mood-raw">raw</span>{% endif %}{% if post.mood contains 'spill' %}<span class="section-post-tag mood-spill">spill</span>{% endif %}{% if post.mood contains 'vulnerable' %}<span class="section-post-tag mood-vulnerable">vulnerable</span>{% endif %}{% if post.mood contains 'unsure' %}<span class="section-post-tag mood-unsure">unsure</span>{% endif %}{% endif %}{% if post.tags.size > 0 %}<span class="section-post-tag">{{ post.tags.last | downcase }}</span>{% endif %}</a></li>
         {% endunless %}{% endfor %}</ul></div>
       {% endif %}
