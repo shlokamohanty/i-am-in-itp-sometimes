@@ -416,7 +416,7 @@
       .card-paper { width: 100% !important; min-height: 140px !important; }
       #card-classnotes  { transform: rotate(-1.2deg) !important; }
       #card-generalnotes { transform: rotate(1.4deg) !important; }
-      #card-reflections  { transform: rotate(-0.8deg) !important; }
+      #card-thoughts  { transform: rotate(-0.8deg) !important; }
       .site-header { padding: 1rem 1.25rem; }
       .section-page { padding: 1.5rem 1.25rem 4rem; }
       .section-post-row { flex-wrap: wrap; }
@@ -444,7 +444,7 @@
   <div class="board" id="board">
 
     <div class="board-intro-cards">
-      <div class="intro-note subtitle-note">notes, reflections, from itp</div>
+      <div class="intro-note subtitle-note">notes, thoughts, from itp</div>
       <div class="intro-note body-note">
         <p>hi, i'm shloka. currently in my second-year, i draw and write quite often. i still don't know where to sit right now - on the floor. almost every day, i relearn the definition of a word. if you're bored, ask me about my word of the day.</p>
       </div>
@@ -475,12 +475,12 @@
       {% assign _g6 = site.posts | where_exp: "p", "p.tags contains 'interests'" %}
       {% assign all_generalnotes = _g1 | concat: _g2 | concat: _g3 | concat: _g4 | concat: _g5 | concat: _g6 | uniq %}
 
-      {% comment %} REFLECTIONS — work-ongoing, work-reflection, ongoing, reflections {% endcomment %}
+      {% comment %} THOUGHTS — work-ongoing, work-thought, ongoing, thoughts {% endcomment %}
       {% assign _r1 = site.posts | where_exp: "p", "p.tags contains 'work-ongoing'" %}
-      {% assign _r2 = site.posts | where_exp: "p", "p.tags contains 'work-reflection'" %}
+      {% assign _r2 = site.posts | where_exp: "p", "p.tags contains 'work-thought'" %}
       {% assign _r3 = site.posts | where_exp: "p", "p.tags contains 'ongoing'" %}
-      {% assign _r4 = site.posts | where_exp: "p", "p.tags contains 'reflections'" %}
-      {% assign all_reflections = _r1 | concat: _r2 | concat: _r3 | concat: _r4 | uniq %}
+      {% assign _r4 = site.posts | where_exp: "p", "p.tags contains 'thoughts'" %}
+      {% assign all_thoughts = _r1 | concat: _r2 | concat: _r3 | concat: _r4 | uniq %}
 
       <a class="card" id="card-classnotes"
          style="top: 30px; left: 28%; transform: rotate(-2.5deg); z-index: 4"
@@ -506,14 +506,14 @@
         </div>
       </a>
 
-      <a class="card" id="card-reflections"
+      <a class="card" id="card-thoughts"
          style="top: 380px; left: 38%; transform: rotate(-1.2deg); z-index: 2"
-         onclick="showSection('reflections'); return false;" href="#">
+         onclick="showSection('thoughts'); return false;" href="#">
         <div class="card-paper" style="border-radius: 18px 22px 14px 20px / 20px 14px 22px 16px;">
           <div class="card-content">
-            <div class="card-category">reflections</div>
+            <div class="card-category">thoughts</div>
             <div class="card-title">thoughts on work, school, the process</div>
-            <div class="card-count">{{ all_reflections.size }} entries</div>
+            <div class="card-count">{{ all_thoughts.size }} entries</div>
           </div>
         </div>
       </a>
@@ -615,17 +615,17 @@
     </div>
   </div>
 
-  <!-- REFLECTIONS -->
-  <div class="section-page" id="section-reflections">
+  <!-- THOUGHTS -->
+  <div class="section-page" id="section-thoughts">
     <button class="section-back" onclick="hideSection()">← back to board</button>
-    <div class="section-header"><h2>reflections</h2></div>
+    <div class="section-header"><h2>thoughts</h2></div>
     <div class="section-posts">
       {% assign seen3 = "" %}
 
       {% assign _ref1 = site.posts | where_exp: "p", "p.tags contains 'work-ongoing'" %}
-      {% assign _ref2 = site.posts | where_exp: "p", "p.tags contains 'work-reflection'" %}
+      {% assign _ref2 = site.posts | where_exp: "p", "p.tags contains 'work-thought'" %}
       {% assign _ref3 = site.posts | where_exp: "p", "p.tags contains 'ongoing'" %}
-      {% assign _ref4 = site.posts | where_exp: "p", "p.tags contains 'reflections'" %}
+      {% assign _ref4 = site.posts | where_exp: "p", "p.tags contains 'thoughts'" %}
       {% assign all_ref_posts = _ref1 | concat: _ref2 | concat: _ref3 | concat: _ref4 | uniq %}
 
       <ul class="section-post-list">{% for post in all_ref_posts %}{% unless seen3 contains post.url %}{% assign seen3 = seen3 | append: post.url | append: "," %}
