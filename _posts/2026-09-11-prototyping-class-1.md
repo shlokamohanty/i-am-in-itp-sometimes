@@ -15,6 +15,7 @@ Learnt a lot of technical things that I didn't know earlier.
 - [SIGCHI](https://sigchi.org/)
 - [ACM Digital Library](https://dl.acm.org/)
 - "How to make good stuff?"
+- [class github](https://github.com/DeqingSun/Prototyping-Electronic-Devices)
 
 ### solder - tube
 - flux core solder automatically applies flux
