@@ -55,7 +55,7 @@ published:
 
 # tags: [ongoing] (general — ongoing)
 
-# tags: [reflections] (general — past)
+# tags: [thoughts] (general — past)
 
 # mood: proud → proud of these
 
