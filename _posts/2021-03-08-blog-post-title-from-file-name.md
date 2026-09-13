@@ -27,6 +27,10 @@ published:
 
 # tags: [thesis-past] (thesis — past)
 
+# tags: [time-ongoing] (time — ongoing)
+
+# tags: [time-past] (time — past)
+
 
 # ── GENERAL NOTES ──────────────────────────────────────────────
 
