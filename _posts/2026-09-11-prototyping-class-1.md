@@ -27,7 +27,7 @@ solder temperature - (600°F - 700°F)
 ```
 if solder is cold:
   won't melt solder
-elseif solder is hot:
+elif solder is hot:
   damage components
   burn off flux
   reduce lifespan of tip
@@ -51,7 +51,7 @@ elseif solder is hot:
 ```
 if leaded solder:
   won't melt solder
-elseif lead-free solder:
+elif lead-free solder:
   damage components
   burn off flux
   reduce lifespan of tip
