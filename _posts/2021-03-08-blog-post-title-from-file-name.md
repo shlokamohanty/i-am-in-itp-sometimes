@@ -31,6 +31,10 @@ published:
 
 # tags: [time-past] (time — past)
 
+# tags: [narratives-past] (narratives — past)
+
+# tags: [narratives-ongoing] (narratives — ongoing)
+
 
 # ── GENERAL NOTES ──────────────────────────────────────────────
 

@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-09-11-prototyping-class-2.md",
+                "file": "2021-03-08-blog-post-title-from-file-name.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2026-09-11-prototyping-class-2"
+              "title": "2021-03-08-blog-post-title-from-file-name"
+            }
+          },
+          {
+            "id": "8a6212be89a17086",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-09-14-narratives-class-1.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "2026-09-14-narratives-class-1"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -201,18 +216,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "24964f8e07eba917",
+  "active": "8a6212be89a17086",
   "lastOpenFiles": [
-    "2026-09-11-networks-class-1.md",
-    "2026-09-11-fabricating-class-1.md",
+    "2026-09-13-hair.md",
+    "2026-09-13-networks-assignment-1.md",
+    "2026-09-14-narratives-class-1.md",
+    "2021-03-08-blog-post-title-from-file-name.md",
+    "2026-09-11-prototyping-class-1.md",
     "2026-09-13-fabricating-assignment-1.md",
     "2026-09-13-fabricating-automaton.md",
-    "2026-09-13-networks-class-1-concepts.md",
-    "2026-09-11-prototyping-class-1.md",
-    "2026-09-11-prototyping-class-2.md",
     "2026-09-14-time-reading.md",
-    "2021-03-08-blog-post-title-from-file-name.md",
-    "2026-09-13-hair.md",
-    "2026-09-13-networks-assignment-1.md"
+    "2026-09-13-networks-class-1-concepts.md",
+    "2026-09-11-networks-class-1.md",
+    "2026-09-11-prototyping-class-2.md",
+    "2026-09-11-fabricating-class-1.md"
   ]
 }
