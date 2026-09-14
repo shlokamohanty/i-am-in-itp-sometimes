@@ -59,7 +59,6 @@
 
     .side-illustration { display: none; }
 
-    /* ── HEADER ── */
     .site-header {
       display: flex;
       justify-content: space-between;
@@ -93,7 +92,6 @@
     .site-nav a:hover { opacity: 0.55; }
     .site-nav a.active { opacity: 1; }
 
-    /* ── BOARD ── */
     .board {
       position: relative;
       z-index: 1;
@@ -109,7 +107,6 @@
     .board::-webkit-scrollbar-thumb { background: rgba(17,17,17,0.2); border-radius: 3px; }
     .board::-webkit-scrollbar-thumb:hover { background: rgba(17,17,17,0.4); }
 
-    /* ── INTRO ── */
     .board-intro-cards {
       position: relative;
       z-index: 10;
@@ -146,7 +143,6 @@
 
     .intro-note.body-note { max-width: 520px; }
 
-    /* ── CARD GRID ── */
     .card-grid {
       position: relative;
       width: 1200px;
@@ -167,7 +163,6 @@
 
     .card { z-index: 3; }
 
-    /* ── CARDS ── */
     .card {
       position: absolute;
       cursor: pointer;
@@ -197,7 +192,6 @@
     }
 
     .card-paper::before { display: none; }
-
     .card-content { text-align: center; z-index: 1; }
 
     .card-category {
@@ -229,7 +223,6 @@
 
     .pin { display: none; }
 
-    /* ── SECTION PAGES ── */
     .section-page {
       display: none;
       position: fixed;
@@ -272,7 +265,6 @@
     }
 
     .section-back:hover { opacity: 0.6; }
-
     .section-header { margin-bottom: 2rem; position: relative; z-index: 1; }
 
     .section-header h2 {
@@ -368,7 +360,6 @@
       margin-bottom: .5rem;
     }
 
-    /* ── FOOTER ── */
     .site-footer-board {
       position: fixed;
       bottom: 0; left: 0; right: 0;
@@ -391,7 +382,6 @@
 
     .site-footer-board a:hover { opacity: 0.7; }
 
-    /* ── MOBILE ── */
     @media (max-width: 768px) {
       .board-intro-cards { margin: 0 0 1.2rem .1rem; max-width: 100%; }
       .intro-note p { font-size: .82rem; }
@@ -414,9 +404,9 @@
         max-width: 340px !important;
       }
       .card-paper { width: 100% !important; min-height: 140px !important; }
-      #card-classnotes  { transform: rotate(-1.2deg) !important; }
-      #card-generalnotes { transform: rotate(1.4deg) !important; }
-      #card-thoughts  { transform: rotate(-0.8deg) !important; }
+      #card-classnotes   { transform: rotate(-1.2deg) !important; }
+      #card-generalnotes { transform: rotate(1.4deg)  !important; }
+      #card-thoughts     { transform: rotate(-0.8deg) !important; }
       .site-header { padding: 1rem 1.25rem; }
       .section-page { padding: 1.5rem 1.25rem 4rem; }
       .section-post-row { flex-wrap: wrap; }
@@ -453,20 +443,20 @@
     <div class="card-grid">
       <svg class="string-layer" id="string-layer" aria-hidden="true"></svg>
 
-      {% comment %} CLASS NOTES — prototyping, networks, fabrication, thesis {% endcomment %}
-      {% assign _c1 = site.posts | where_exp: "p", "p.tags contains 'prototyping-ongoing'" %}
-      {% assign _c2 = site.posts | where_exp: "p", "p.tags contains 'prototyping-past'" %}
-      {% assign _c3 = site.posts | where_exp: "p", "p.tags contains 'networks-ongoing'" %}
-      {% assign _c4 = site.posts | where_exp: "p", "p.tags contains 'networks-past'" %}
-      {% assign _c5 = site.posts | where_exp: "p", "p.tags contains 'fabrication-ongoing'" %}
-      {% assign _c6 = site.posts | where_exp: "p", "p.tags contains 'fabrication-past'" %}
-      {% assign _c7 = site.posts | where_exp: "p", "p.tags contains 'thesis-ongoing'" %}
-      {% assign _c8 = site.posts | where_exp: "p", "p.tags contains 'thesis-past'" %}
-      {% assign _c9 = site.posts | where_exp: "p", "p.tags contains 'time-ongoing'" %}
+      {% assign _c1  = site.posts | where_exp: "p", "p.tags contains 'prototyping-ongoing'" %}
+      {% assign _c2  = site.posts | where_exp: "p", "p.tags contains 'prototyping-past'" %}
+      {% assign _c3  = site.posts | where_exp: "p", "p.tags contains 'networks-ongoing'" %}
+      {% assign _c4  = site.posts | where_exp: "p", "p.tags contains 'networks-past'" %}
+      {% assign _c5  = site.posts | where_exp: "p", "p.tags contains 'fabrication-ongoing'" %}
+      {% assign _c6  = site.posts | where_exp: "p", "p.tags contains 'fabrication-past'" %}
+      {% assign _c7  = site.posts | where_exp: "p", "p.tags contains 'thesis-ongoing'" %}
+      {% assign _c8  = site.posts | where_exp: "p", "p.tags contains 'thesis-past'" %}
+      {% assign _c9  = site.posts | where_exp: "p", "p.tags contains 'time-ongoing'" %}
       {% assign _c10 = site.posts | where_exp: "p", "p.tags contains 'time-past'" %}
-      {% assign all_classnotes = _c1 | concat: _c2 | concat: _c3 | concat: _c4 | concat: _c5 | concat: _c6 | concat: _c7 | concat: _c8 | concat: _c9 | concat: _c10 | uniq %}
+      {% assign _c11 = site.posts | where_exp: "p", "p.tags contains 'narratives-ongoing'" %}
+      {% assign _c12 = site.posts | where_exp: "p", "p.tags contains 'narratives-past'" %}
+      {% assign all_classnotes = _c1 | concat: _c2 | concat: _c3 | concat: _c4 | concat: _c5 | concat: _c6 | concat: _c7 | concat: _c8 | concat: _c9 | concat: _c10 | concat: _c11 | concat: _c12 | uniq %}
 
-      {% comment %} GENERAL NOTES — academic, interests {% endcomment %}
       {% assign _g1 = site.posts | where_exp: "p", "p.tags contains 'academic-ongoing'" %}
       {% assign _g2 = site.posts | where_exp: "p", "p.tags contains 'academic-past'" %}
       {% assign _g3 = site.posts | where_exp: "p", "p.tags contains 'interests-ongoing'" %}
@@ -475,7 +465,6 @@
       {% assign _g6 = site.posts | where_exp: "p", "p.tags contains 'interests'" %}
       {% assign all_generalnotes = _g1 | concat: _g2 | concat: _g3 | concat: _g4 | concat: _g5 | concat: _g6 | uniq %}
 
-      {% comment %} THOUGHTS — work-ongoing, work-thought, ongoing, thoughts {% endcomment %}
       {% assign _r1 = site.posts | where_exp: "p", "p.tags contains 'work-ongoing'" %}
       {% assign _r2 = site.posts | where_exp: "p", "p.tags contains 'work-thought'" %}
       {% assign _r3 = site.posts | where_exp: "p", "p.tags contains 'ongoing'" %}
@@ -538,12 +527,15 @@
       {% assign past_thesis      = site.posts | where_exp: "p", "p.tags contains 'thesis-past'" %}
       {% assign on_time          = site.posts | where_exp: "p", "p.tags contains 'time-ongoing'" %}
       {% assign past_time        = site.posts | where_exp: "p", "p.tags contains 'time-past'" %}
+      {% assign on_narratives    = site.posts | where_exp: "p", "p.tags contains 'narratives-ongoing'" %}
+      {% assign past_narratives  = site.posts | where_exp: "p", "p.tags contains 'narratives-past'" %}
 
-      {% assign all_prototyping = on_prototyping | concat: past_prototyping | uniq %}
-      {% assign all_networks    = on_networks    | concat: past_networks    | uniq %}
-      {% assign all_fabrication = on_fabrication | concat: past_fabrication | uniq %}
-      {% assign all_thesis_cn   = on_thesis      | concat: past_thesis      | uniq %}
-      {% assign all_time        = on_time        | concat: past_time        | uniq %}
+      {% assign all_prototyping  = on_prototyping  | concat: past_prototyping  | uniq %}
+      {% assign all_networks     = on_networks     | concat: past_networks     | uniq %}
+      {% assign all_fabrication  = on_fabrication  | concat: past_fabrication  | uniq %}
+      {% assign all_thesis_cn    = on_thesis       | concat: past_thesis       | uniq %}
+      {% assign all_time         = on_time         | concat: past_time         | uniq %}
+      {% assign all_narratives   = on_narratives   | concat: past_narratives   | uniq %}
 
       {% if all_prototyping.size > 0 %}
       <div class="subtag-group"><div class="subtag-group-label">prototyping electronic devices</div>
@@ -579,6 +571,14 @@
           <li><a href="{{ post.url | relative_url }}" class="section-post-row"><span class="section-post-date">{{ post.date | date: "%b %d, %Y" }}</span><div class="section-post-body"><div class="section-post-title">{{ post.title }}</div>{% if post.subtitle %}<div class="section-post-subtitle">{{ post.subtitle }}</div>{% endif %}</div>{% if post.mood %}{% if post.mood contains 'proud' %}<span class="section-post-tag mood-proud">proud</span>{% endif %}{% if post.mood contains 'raw' %}<span class="section-post-tag mood-raw">raw</span>{% endif %}{% if post.mood contains 'spill' %}<span class="section-post-tag mood-spill">spill</span>{% endif %}{% if post.mood contains 'vulnerable' %}<span class="section-post-tag mood-vulnerable">vulnerable</span>{% endif %}{% if post.mood contains 'unsure' %}<span class="section-post-tag mood-unsure">unsure</span>{% endif %}{% endif %}{% if post.tags.size > 0 %}<span class="section-post-tag">{{ post.tags.last | downcase }}</span>{% endif %}</a></li>
         {% endunless %}{% endfor %}</ul></div>
       {% endif %}
+
+      {% if all_narratives.size > 0 %}
+      <div class="subtag-group"><div class="subtag-group-label">computational approaches to narrative</div>
+        <ul class="section-post-list">{% for post in all_narratives %}{% unless seen contains post.url %}{% assign seen = seen | append: post.url | append: "," %}
+          <li><a href="{{ post.url | relative_url }}" class="section-post-row"><span class="section-post-date">{{ post.date | date: "%b %d, %Y" }}</span><div class="section-post-body"><div class="section-post-title">{{ post.title }}</div>{% if post.subtitle %}<div class="section-post-subtitle">{{ post.subtitle }}</div>{% endif %}</div>{% if post.mood %}{% if post.mood contains 'proud' %}<span class="section-post-tag mood-proud">proud</span>{% endif %}{% if post.mood contains 'raw' %}<span class="section-post-tag mood-raw">raw</span>{% endif %}{% if post.mood contains 'spill' %}<span class="section-post-tag mood-spill">spill</span>{% endif %}{% if post.mood contains 'vulnerable' %}<span class="section-post-tag mood-vulnerable">vulnerable</span>{% endif %}{% if post.mood contains 'unsure' %}<span class="section-post-tag mood-unsure">unsure</span>{% endif %}{% endif %}{% if post.tags.size > 0 %}<span class="section-post-tag">{{ post.tags.last | downcase }}</span>{% endif %}</a></li>
+        {% endunless %}{% endfor %}</ul></div>
+      {% endif %}
+
     </div>
   </div>
 
