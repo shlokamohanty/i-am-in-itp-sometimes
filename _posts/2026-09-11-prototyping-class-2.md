@@ -17,4 +17,4 @@ Mostly went over Easy EDA tool.
 ### Part, Footprint, Package
 
 **Part**
-- ==Schematic==
+- Schematic

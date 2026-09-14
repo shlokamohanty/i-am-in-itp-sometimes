@@ -141,3 +141,7 @@ def hello():
 use a divider + italic for end-of-post notes:
 
 _a note added later: ..._
+
+highlight
+
+This is a <mark>Schematic</mark> of the system.
