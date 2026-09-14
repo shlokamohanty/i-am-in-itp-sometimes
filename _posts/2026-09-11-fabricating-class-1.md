@@ -3,7 +3,8 @@ layout: post
 title: class 1
 subtitle: ""
 date: 2026-09-11
-tags: fabricating-ongoing
+tags:
+  - fabrication-ongoing
 ---
 
 - mechatronic architecture

@@ -3,7 +3,8 @@ layout: post
 title: an inspiring automaton
 subtitle: ""
 date: 2026-09-13
-tags: fabricating-ongoing
+tags:
+  - fabrication-ongoing
 ---
 
 I think one of the automatons that I found online while researching about gears that I found inspiring is the 'Antikythera Mechanism'. It's an analogue computer.

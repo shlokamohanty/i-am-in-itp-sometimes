@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-09-13-fabricating-automaton.md",
+                "file": "2026-09-11-fabricating-class-1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-09-13-fabricating-automaton"
-            }
-          },
-          {
-            "id": "7c7eabbd91dd46a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-09-14-time-reading.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "2026-09-14-time-reading"
+              "title": "2026-09-11-fabricating-class-1"
             }
           }
         ]
@@ -190,7 +176,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "2026-09-13-fabricating-automaton.md"
+                "file": "2026-09-13-networks-class-1-concepts.md"
               },
               "icon": "lucide-info",
               "title": "File properties"
@@ -217,16 +203,16 @@
   },
   "active": "24964f8e07eba917",
   "lastOpenFiles": [
-    "2026-09-14-time-reading.md",
-    "2026-09-11-fabricating-class-1.md",
-    "2026-09-11-prototyping-class-2.md",
     "2026-09-13-fabricating-assignment-1.md",
     "2026-09-13-fabricating-automaton.md",
+    "2026-09-13-networks-class-1-concepts.md",
+    "2026-09-11-fabricating-class-1.md",
+    "2026-09-11-networks-class-1.md",
+    "2026-09-11-prototyping-class-1.md",
+    "2026-09-11-prototyping-class-2.md",
+    "2026-09-14-time-reading.md",
     "2021-03-08-blog-post-title-from-file-name.md",
     "2026-09-13-hair.md",
-    "2026-09-13-networks-assignment-1.md",
-    "2026-09-13-networks-class-1-concepts.md",
-    "2026-09-11-prototyping-class-1.md",
-    "2026-09-11-networks-class-1.md"
+    "2026-09-13-networks-assignment-1.md"
   ]
 }
