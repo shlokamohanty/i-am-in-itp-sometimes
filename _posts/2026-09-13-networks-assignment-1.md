@@ -64,12 +64,20 @@ This was interesting. I didn't know that 10 unique external IP addresses were at
 
 [**How Infrastructure Shapes Us**](https://untappedjournal.com/stories/deb-chachra-how-infrastructure-shapes-us), Deb Chachra, 2023
 
-- 
+> One definition of infrastructure is that it’s all the underlying systems whose presence we take for granted when we start on something new.
+> Much of the value of transportation and telecommunications networks lies in the nature and number of connections between nodes: The more people who are connected together, the more valuable the networks become for each user.
 
 **[Why Google Went Offline Today and a Bit about How the Internet Works](http://blog.cloudflare.com/why-google-went-offline-today-and-a-bit-about)** Tom Paseka, CloudFlare, 2006
 
-- 
+> The Internet is a collection of networks, known as "Autonomous Systems" (AS). Each network has a unique number to identify it known as AS number.
+> The networks are connected together by what is known as Border Gateway Protocol (BGP). BGP is the glue of the Internet — announcing what IP addresses belong to each network and establishing the routes from one AS to another.
+> Networks trust each other to say which IP addresses and other networks are behind them. When you send a packet or make a request across the network, your ISP connects to its upstream providers or peers and finds the shortest path from your ISP to the destination network.
+> Unfortunately, if a network starts to send out an announcement of a particular IP address or network behind it, when in fact it is not, if that network is trusted by its upstreams and peers then packets can end up misrouted. That is what was happening here.
+
+- It’s like spreading rumors
 
 **[We finally know what caused the global tech outage – and how much it cost](https://www.cnn.com/2024/07/24/tech/crowdstrike-outage-cost-cause/index.html)** Brian Fung, CNN, 2024
 
-- 
+> The issue affected only Windows devices, not Mac or Linux machines, and only those that were switched on and able to receive updates during those early morning hours.
+> When Windows devices using CrowdStrike’s cybersecurity tools tried to access the flawed file, it caused an “out-of-bounds memory read” that “could not be gracefully handled, resulting in a Windows operating system crash,” CrowdStrike said.
+> CrowdStrike said that the testing and validation system that approved the bad software update had appeared to function normally for other releases made earlier in the year.
