@@ -3,7 +3,7 @@ layout: post
 title: class 1 and initial project ideation
 subtitle: ""
 date: 2026-09-11
-tags: prototyping-ongoing
+tags: prototyping-past
 ---
 
 Learnt a lot of technical things that I didn't know earlier.

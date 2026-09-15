@@ -4,7 +4,7 @@ title: assignment 1
 subtitle: ""
 date: 2026-09-13
 tags:
-  - fabrication-ongoing
+  - fabrication-past
 ---
 
 ![monster-truck-packaging](/i-am-in-itp-sometimes/assets/images/monster-truck-packaging.jpg)

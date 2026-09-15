@@ -3,7 +3,7 @@ layout: post
 title: reading before class 1
 subtitle: ""
 date: 2026-09-14
-tags: time-ongoing
+tags: time-past
 ---
 
 Jay Griffiths : A Sideways Look at Time

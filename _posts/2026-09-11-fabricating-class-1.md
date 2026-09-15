@@ -4,7 +4,7 @@ title: class 1
 subtitle: ""
 date: 2026-09-11
 tags:
-  - fabrication-ongoing
+  - fabrication-past
 ---
 
 - mechatronic architecture
