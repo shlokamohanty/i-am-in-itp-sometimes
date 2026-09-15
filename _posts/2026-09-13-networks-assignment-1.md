@@ -1,6 +1,6 @@
 ---
 layout: post
-title: assignment 1
+title: assignment 1 and readings
 subtitle: ""
 date: 2026-09-13
 tags: networks-ongoing
@@ -37,3 +37,25 @@ In all honesty, I think I don't really remember what Linux is. I forgot what Eth
 > [Linux®](https://www.redhat.com/en/topics/linux/what-is-linux) is an open source operating system (OS) created by Linus Torvalds in 1991. Today, it has a massive user base, and is used in the world’s 500 most powerful supercomputers.
 
 > [Unix](https://en.wikipedia.org/wiki/Unix) is a family of multitasking, multi-user computer operating systems that trace their origins back to the original AT&T Unix developed in 1969 at Bell Labs.
+
+--- 
+
+**firewall log analysis**
+
+![networks](/i-am-in-itp-sometimes/assets/images/terminal2.jpg)
+
+![networks](/i-am-in-itp-sometimes/assets/images/terminal3.jpg)
+
+![networks](/i-am-in-itp-sometimes/assets/images/terminal4.jpg)
+
+1453 attempts to connect to my computer, so far
+
+![networks](/i-am-in-itp-sometimes/assets/images/terminal5.jpg)
+
+```sudo tail -10 /var/log/ufw.log | sed -e 's/\s/\t/g'```
+
+![networks](/i-am-in-itp-sometimes/assets/images/sheets.jpg)
+
+---
+
+**readings**
