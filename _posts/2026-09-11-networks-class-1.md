@@ -68,7 +68,7 @@ V4 - 4 bytes of information
 
 Radios can wipe out WiFi because they have the same frequency.
 
-### Private IP addresses
+### private IP addresses
 - every website has a unique IP address
 
 nslookup

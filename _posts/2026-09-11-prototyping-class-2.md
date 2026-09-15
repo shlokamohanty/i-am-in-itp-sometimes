@@ -15,7 +15,7 @@ Mostly went over Easy EDA tool.
 - ready for mass production
 - can corporate with 3D software
 
-### Part, Footprint, Package
+### part, footprint, package
 
 **Part**
 - Schematic
@@ -41,7 +41,7 @@ objects directly connected are in the same network in schematic, they can either
 
 - strips of copper that connect pads and vias together
 
-### Vias
+### vias
 
 - generally small and not exposed
 
@@ -54,7 +54,7 @@ objects directly connected are in the same network in schematic, they can either
 - check your breadboard prototype for parts and connections
 - make sure you can colder all packages you choose
 
-### Function blocks of circuits
+### function blocks of circuits
 
 - Easy to understand
 - Easy to read

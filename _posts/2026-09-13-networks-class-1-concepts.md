@@ -18,9 +18,9 @@ I noticed, I didn't go over the readings before the first class. I'm getting use
 
 > **Centralized networks** are networks in which all nodes are linked to one central node, and all communication flows through the center. In a diagram, they look like a star.
 
-The way my Obsidian is set up for my personal blog, it's almost as though there are clusters of centralized networks.
+I haven't set up my personal blog efficiently. So the Obsidian network are clusters of centralized networks.
 
-![hair](/i-am-in-itp-sometimes/assets/images/personal-blog.jpg)
+![personal-blog](/i-am-in-itp-sometimes/assets/images/personal-blog.jpg)
 
 > **Decentralized networks** are collections of  several hubs of nodes. Each hub has a central node, but the hubs are all linked together through other links.
 

@@ -17,7 +17,9 @@ Kezia and I got 'Monster Trucks' from '5 Below' and took it apart. We didn't pre
 
 I forgot to take a video of my monster truck, but Kezia sent me the videos that she took. The trucks are essentially the exact same in terms of functionality. I felt a little silly, so I made it heavily edited.
 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jion1tggor0?si=JmbdiVMxt2qaRtfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 Kezia and I were able to disassemble the toy using screw-drivers and chisels. We clamped it down while using the chisel. We did run into an issue while taking the wheel apart. The wheel was a compression fit. We learnt this from Devlin.
 
@@ -25,4 +27,4 @@ There is one motor, and that motor was attached to a gear and an axle on the bac
 
 ![monster-truck-2](/i-am-in-itp-sometimes/assets/images/knoll.jpg)
 
-I'm unsure of my labelling. I referenced the train labelling and tried to come up with the car, but couldn’t really find standardised toy labelling online. I liked the process of knolling.
+I'm unsure of my labelling. I referenced the train labelling from the class notion page and tried to come up with the car ones, but couldn’t really find standardised toy labelling online. I liked the process of knolling.
