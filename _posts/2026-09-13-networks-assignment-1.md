@@ -48,7 +48,7 @@ In all honesty, I think I don't really remember what Linux is. I forgot what Eth
 
 ![networks](/i-am-in-itp-sometimes/assets/images/terminal4.jpg)
 
-1453 attempts to connect to my computer, so far
+1453 attempts to connect to my computer, so far...
 
 ![networks](/i-am-in-itp-sometimes/assets/images/terminal5.jpg)
 
@@ -56,6 +56,20 @@ In all honesty, I think I don't really remember what Linux is. I forgot what Eth
 
 ![networks](/i-am-in-itp-sometimes/assets/images/sheets.jpg)
 
+This was interesting. I didn't know that 10 unique external IP addresses were attempting to connect to my server. Given that I looked at the last 10 results, I wasn't expecting all 10 to be unique, though. I did this at home, as opposed to school. Maybe the results would have been different in school
+
 ---
 
 **readings**
+
+[**How Infrastructure Shapes Us**](https://untappedjournal.com/stories/deb-chachra-how-infrastructure-shapes-us), Deb Chachra, 2023
+
+- 
+
+**[Why Google Went Offline Today and a Bit about How the Internet Works](http://blog.cloudflare.com/why-google-went-offline-today-and-a-bit-about)** Tom Paseka, CloudFlare, 2006
+
+- 
+
+**[We finally know what caused the global tech outage – and how much it cost](https://www.cnn.com/2024/07/24/tech/crowdstrike-outage-cost-cause/index.html)** Brian Fung, CNN, 2024
+
+- 

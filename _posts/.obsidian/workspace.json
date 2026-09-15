@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "24964f8e07eba917",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2021-03-08-blog-post-title-from-file-name.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "2021-03-08-blog-post-title-from-file-name"
-            }
-          },
-          {
             "id": "8a6212be89a17086",
             "type": "leaf",
             "state": {
@@ -35,8 +21,7 @@
               "title": "2026-09-13-networks-assignment-1"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
