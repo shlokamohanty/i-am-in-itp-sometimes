@@ -38,7 +38,7 @@ And within the virtual environment, we did:
 
  ```pip install jupyter```
 
-But it turned out that this wouldn't run the Jupyter Notebook locally. It would be running somewhere, though.
+But it turned out that this wouldn't run the Jupyter Notebook locally. It would be running somewhere else, though.
 
 So we did something called 'tunnelling', which I don't quite get yet. Then we added a new rule because '8888' is where Jupyter Notebook runs:
 

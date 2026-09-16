@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-09-15-automatons-and-clockwork.md",
+                "file": "2026-09-15-networks-jupyter-notebook.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2026-09-15-automatons-and-clockwork"
+              "title": "2026-09-15-networks-jupyter-notebook"
             }
           }
         ]
@@ -204,8 +204,8 @@
   "active": "5a2ca50637f963dd",
   "lastOpenFiles": [
     "2026-09-15-networks-class-2.md",
-    "2026-09-15-networks-jupyter-notebook.md",
     "2026-09-15-automatons-and-clockwork.md",
+    "2026-09-15-networks-jupyter-notebook.md",
     "2026-09-14-narratives-class-1.md",
     "2026-09-14-time-reading.md",
     "2026-09-13-networks-assignment-1.md",
