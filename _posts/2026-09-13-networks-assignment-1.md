@@ -48,7 +48,7 @@ In all honesty, I think I don't really remember what Linux is. I forgot what Eth
 
 ![networks](/i-am-in-itp-sometimes/assets/images/terminal4.jpg)
 
-1453 attempts to connect to my computer, so far...
+I thought it is 1453 attempts to connect to my computer, so far. But, I forgot to do a line count.
 
 ![networks](/i-am-in-itp-sometimes/assets/images/terminal5.jpg)
 
@@ -56,7 +56,9 @@ In all honesty, I think I don't really remember what Linux is. I forgot what Eth
 
 ![networks](/i-am-in-itp-sometimes/assets/images/sheets.jpg)
 
-This was interesting. I didn't know that 10 unique external IP addresses were attempting to connect to my server. Given that I looked at the last 10 results, I wasn't expecting all 10 to be unique, though. I did this at home, as opposed to school. Maybe the results would have been different in school
+This was interesting. I didn't know that 10 unique external IP addresses were attempting to connect to my server. Given that I looked at only the last 10 results, I wasn't expecting all 10 to be unique, though. I did this at home, as opposed to school. Maybe the results would have been different in school.
+
+They all have the same MAC address.
 
 ---
 
