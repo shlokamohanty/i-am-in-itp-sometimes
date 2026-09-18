@@ -3,7 +3,7 @@ layout: post
 title: setting up jupyter notebook
 subtitle: ""
 date: 2026-09-15
-tags: networks-ongoing
+tags: networks-past
 ---
 
 James helped me set up a Jupyter Notebook on my droplet.

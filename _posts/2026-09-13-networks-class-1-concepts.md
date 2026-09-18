@@ -2,7 +2,7 @@
 layout: post
 title: class 1 concepts
 subtitle: ""
-date: 2026-09-11
+date: 2026-09-13
 tags: networks-ongoing
 ---
 
