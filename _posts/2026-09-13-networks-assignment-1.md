@@ -3,7 +3,7 @@ layout: post
 title: assignment 1 and readings
 subtitle: ""
 date: 2026-09-13
-tags: networks-ongoing
+tags: networks-past
 ---
 
 I was supposed to do this much earlier, but I started much later. Now, I feel like I'm one of those hackers from the movies, except right now I'm just trying to figure out how to set up my virtual host. The only thing akin to the hackers from the movies is the dim light from my lamp, except it's a warm shade instead of a cool one.
