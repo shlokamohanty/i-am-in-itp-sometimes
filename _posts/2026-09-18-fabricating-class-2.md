@@ -4,7 +4,7 @@ title: class 2
 subtitle: ""
 date: 2026-09-18
 tags:
-  - fabrication-ongoing
+  - fabrication-past
 ---
 
 The class went in presentations of our assigned mechanisms.
