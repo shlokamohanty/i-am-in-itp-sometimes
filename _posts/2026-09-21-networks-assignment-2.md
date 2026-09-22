@@ -13,6 +13,8 @@ From Wikipedia:
 
 What is ```dnf``` in ```sudo dnf install traceroute mtr```?
 
+[Dandified YUM](https://en.wikipedia.org/wiki/DNF_(software))
+
 I do visit Gmail a lot, but I also think lately I've been watching BBC animal videos on YouTube a lot. I like watching penguin and cat videos. HBO Max too.
 
 I'll start with one of the BBC animal videos that I was watching. This is one is of a [baby penguin](https://youtu.be/q3uXXh1sHcI?si=6aZCV8gzCwug9nEL).
@@ -45,7 +47,7 @@ So I tried:
 
  ```traceroute www.youtube.com/watch?v=q3uXXh1sHcI | sed -e 's/\s/\t/g'```
 
-It gave the same error. I don't quite understand why specific links are not working.
+It gave the same error. I don't quite get why specific links are not working.
 
 Then, I just tried:
 
