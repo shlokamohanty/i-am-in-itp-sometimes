@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-09-19-fabricating-assignment-2.md",
+                "file": "2026-09-21-networks-assignment-2.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2026-09-19-fabricating-assignment-2"
+              "title": "2026-09-21-networks-assignment-2"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "2026-09-21-networks-assignment-2"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -216,12 +215,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "e28331f05cd03999",
+  "active": "5a2ca50637f963dd",
   "lastOpenFiles": [
-    "2026-09-18-narratives-reading-2.md",
     "2026-09-19-fabricating-assignment-2.md",
-    "2026-09-14-narratives-class-1.md",
     "2026-09-21-networks-assignment-2.md",
+    "2026-09-18-narratives-reading-2.md",
+    "2026-09-14-narratives-class-1.md",
     "2026-09-13-networks-assignment-1.md",
     "2026-09-13-networks-class-1-concepts.md",
     "2026-09-15-networks-jupyter-notebook.md",

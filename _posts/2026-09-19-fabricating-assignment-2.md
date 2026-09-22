@@ -28,3 +28,6 @@ It doesn't work as smoothly as I thought because one of the gear teeth isn't pro
 I took a photo, but I forgot to take a video, which I will add tomorrow before class.
 
 ![spirograph3](/i-am-in-itp-sometimes/assets/images/spirograph3.jpg)
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/289vdmk3NZw?si=TamjarFmAq4qyetH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -64,6 +64,8 @@ Then, I just tried:
 
 ### on distributed communications
 
+> The centralized network is obviously vulnerable as destruction of a single central node destroys communication between the end stations.
+
 #### examination of a distributed network
 
 > The term "redundancy level" is used as a measure of connectivity, as defined in Fig. 2. A minimum span network, one formed with the smallest number of links possible, is chosen as a reference point, and is called "a network of redundancy level one."
@@ -71,3 +73,7 @@ Then, I just tried:
 #### node destruction
 
 > If the expected "noise" was destruction caused by conventional hardware failure, the failures would be randomly distributed through the network. But, if the disturbance were caused by enemy attack, the possible "worst cases" must be considered.
+
+> We have briefly considered network behavior when all links are working. But, we are also interested in determining network behavior with real world links—some destroyed, while others are being repaired.
+
+> This implements a form of sceptical learning. Learning will take place even with occasional errors. Thus, by the simple device of using only two separate "learning constants," depending whether the measured value is greater or less than the table value, we can provide a mechanism that permits the network routing to be responsive to varying loads, breaks, and repairs.
