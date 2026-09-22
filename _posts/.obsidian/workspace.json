@@ -8,34 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5a2ca50637f963dd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-09-21-networks-assignment-2.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "2026-09-21-networks-assignment-2"
-            }
-          },
-          {
             "id": "e28331f05cd03999",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-09-21-networks-assignment-2.md",
+                "file": "2026-09-18-fabricating-class-2.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2026-09-21-networks-assignment-2"
+              "title": "2026-09-18-fabricating-class-2"
+            }
+          },
+          {
+            "id": "886c604b840f2801",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-09-22-fabricating-class-3.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "2026-09-22-fabricating-class-3"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -215,16 +216,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "5a2ca50637f963dd",
+  "active": "886c604b840f2801",
   "lastOpenFiles": [
-    "2026-09-19-fabricating-assignment-2.md",
     "2026-09-21-networks-assignment-2.md",
+    "2026-09-22-fabricating-class-3.md",
+    "2026-09-18-fabricating-class-2.md",
+    "2026-09-19-fabricating-assignment-2.md",
     "2026-09-18-narratives-reading-2.md",
     "2026-09-14-narratives-class-1.md",
     "2026-09-13-networks-assignment-1.md",
     "2026-09-13-networks-class-1-concepts.md",
     "2026-09-15-networks-jupyter-notebook.md",
-    "2026-09-18-fabricating-class-2.md",
     "2026-09-18-prototyping-class-3.md",
     "2026-09-15-automatons-and-clockwork.md",
     "2026-09-15-networks-class-2.md",

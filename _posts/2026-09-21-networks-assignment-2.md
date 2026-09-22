@@ -8,6 +8,9 @@ tags: networks-ongoing
 
 What is ```mtr``` in ```sudo apt install mtr```?
 
+From Wikipedia:
+[**My traceroute**](https://en.wikipedia.org/wiki/MTR_(software)), originally named **Matt's traceroute** (**MTR**), is a computer program that combines the functions of the traceroute and ping programs in one network diagnostic tool.
+
 What is ```dnf``` in ```sudo dnf install traceroute mtr```?
 
 I do visit Gmail a lot, but I also think lately I've been watching BBC animal videos on YouTube a lot. I like watching penguin and cat videos. HBO Max too.
