@@ -10,7 +10,7 @@ What is ```mtr``` in ```sudo apt install mtr```?
 
 What is ```dnf``` in ```sudo dnf install traceroute mtr```?
 
-I do visit gmail.com a lot, but I also think lately I've been watching BBC animal videos on YouTube a lot. I like watching penguin and cat videos. HBO Max and Amazon.com because I was moving this weekend.
+I do visit Gmail a lot, but I also think lately I've been watching BBC animal videos on YouTube a lot. I like watching penguin and cat videos. HBO Max too.
 
 I'll start with one of the BBC animal videos that I was watching. This is one is of a [baby penguin](https://youtu.be/q3uXXh1sHcI?si=6aZCV8gzCwug9nEL).
 
