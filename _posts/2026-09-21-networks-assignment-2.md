@@ -52,6 +52,16 @@ Then, I just tried:
  
 ---
 
+### the dawn of the stupid network
+
+> So what exactly is a Stupid Network? George Gilder observed more than five years ago, "In a world of dumb terminals and telephones, networks had to be smart. But in a world of smart terminals, networks have to be dumb."
+
+> Bits go in one end and come out the other. Data flows – like water – define the movements and channels within the system.
+
+> Consider the local exchange, represented by the three digits of a telephone number that follow the area code (the nxx in the pattern nxn-nxx-xxxx). The local exchange "owns" the last four digits of a telephone number. Theoretically, a local exchange can serve up to 10,000 telephones, e.g., with numbers 762-0000 through 762-9999.
+
+> Today, network providers routinely put several tens of gigabits – a few hundred thousand calls – on a single glass fiber as thin as a human hair. Switching used to be scarce, too, but now it is equally abundant.
+
 ### on distributed communications
 
 #### examination of a distributed network
