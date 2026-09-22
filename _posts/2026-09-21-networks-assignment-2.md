@@ -79,6 +79,8 @@ Then, I just tried:
 
 > If the expected "noise" was destruction caused by conventional hardware failure, the failures would be randomly distributed through the network. But, if the disturbance were caused by enemy attack, the possible "worst cases" must be considered.
 
+#### other notes
+
 > We have briefly considered network behavior when all links are working. But, we are also interested in determining network behavior with real world links—some destroyed, while others are being repaired.
 
 > This implements a form of sceptical learning. Learning will take place even with occasional errors. Thus, by the simple device of using only two separate "learning constants," depending whether the measured value is greater or less than the table value, we can provide a mechanism that permits the network routing to be responsive to varying loads, breaks, and repairs.
