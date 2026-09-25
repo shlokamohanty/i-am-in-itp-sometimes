@@ -3,7 +3,7 @@ layout: post
 title: assignment 2 and readings
 subtitle: ""
 date: 2026-09-21
-tags: networks-ongoing
+tags: networks-past
 ---
 
 What is ```mtr``` in ```sudo apt install mtr```?

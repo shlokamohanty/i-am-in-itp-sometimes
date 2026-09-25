@@ -4,7 +4,7 @@ title: assignment 2
 subtitle: ""
 date: 2026-09-19
 tags:
-  - fabrication-ongoing
+  - fabrication-past
 ---
 
 Since Kezia and I want to make a pen plotter of sorts using a crab pincer that we found, we both tried out two different plotter mechanisms. I found this Spirograph on YouTube, which I thought was fairly simple to work with.
