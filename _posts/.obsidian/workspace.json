@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "09a4721e78194078",
+            "id": "5461bc1f50f290b7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-09-14-narratives-class-1.md",
+                "file": "2026-09-26-thesis.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2026-09-14-narratives-class-1"
-            }
-          },
-          {
-            "id": "e7b1fb695fc98533",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-09-25-narratives-class-3.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "2026-09-25-narratives-class-3"
+              "title": "2026-09-26-thesis"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -216,10 +201,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "e7b1fb695fc98533",
+  "active": "5461bc1f50f290b7",
   "lastOpenFiles": [
-    "2026-09-22-networks-class-3.md",
     "2026-09-25-narratives-class-3.md",
+    "2026-09-26-thesis.md",
+    "2021-03-08-blog-post-title-from-file-name.md",
+    "2026-09-22-networks-class-3.md",
     "2026-09-14-narratives-class-1.md",
     "2026-09-13-networks-assignment-1.md",
     "2026-09-13-networks-class-1-concepts.md",
@@ -239,7 +226,6 @@
     "2026-09-11-prototyping-class-2.md",
     "2026-09-11-prototyping-class-1.md",
     "2026-09-11-networks-class-1.md",
-    "2026-09-11-fabricating-class-1.md",
-    "2021-03-08-blog-post-title-from-file-name.md"
+    "2026-09-11-fabricating-class-1.md"
   ]
 }
