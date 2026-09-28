@@ -24,7 +24,7 @@ Film has demonstrated how art can use ‘natural’ material.
 music) nor ‘substitutes’ (as in the theatre).
 - Even actors – in the context of film and its material – only become autono-mous components once they have divested themselves entirely of their attributes as actors and transformed back into ‘natural material’.
 - Film’s intrinsic productivity lies in the selection, assemblage and montage of natural material.
-- Radio offers similar possibilities, but in the acoustic sphere.2 It has the ability to transmit acoustic images of an event (whether this be a football match or a pilot’s homecoming) – even as it is taking place. In so doing, however, what it offers is merely reportage, not composition.
+- Radio offers similar possibilities, but in the acoustic sphere. It has the ability to transmit acoustic images of an event (whether this be a football match or a pilot’s homecoming) – even as it is taking place. In so doing, however, what it offers is merely reportage, not composition.
 
 The radiophonic art is and will remain the domain of images stimulated by words (thus it may come to the rescue of the speaking films, at least in part), and its technique must consist of bringing images to life, taming them, shaping them.
 
