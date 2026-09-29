@@ -1,6 +1,6 @@
 ---
 layout: post
-title: radio as art and technology: research
+title: radio as art and technology
 subtitle: ""
 date: 2026-09-26
 tags: thesis-ongoing
