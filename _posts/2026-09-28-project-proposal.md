@@ -92,3 +92,5 @@ I wanted the linkages to be connected as such, so they 'consult' one another in 
 ---
 
 I think, in terms of mechanisms, I'll be using gears, a crank, and bar linkages.
+
+I'm unsure about the number of linkages because I still need to model the motion and decide the number of planets I'd want to plot.
