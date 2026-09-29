@@ -93,4 +93,12 @@ I wanted the linkages to be connected as such, so they 'consult' one another in 
 
 I think, in terms of mechanisms, I'll be using gears, a crank, and bar linkages.
 
-I'm unsure about the number of linkages because I still need to model the motion and decide the number of planets I'd want to plot.
+I'm unsure about the number of linkages because I still need to model the motion, which depends on which planets I decide on.
+
+---
+
+I think in terms of materials, I would want to use wood. And to put the planet around the pen, I want to use wire spheres. I want a combination of wood and wires.
+
+---
+
+Start prototyping in parts over the weekend; for that, I want to use the laser cutter to use card board and wires to prototype. After prototyping, I'm going to get the materials; I think I can get both of those from Blick.
