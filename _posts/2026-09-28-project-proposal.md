@@ -30,7 +30,9 @@ prefiguring the day
 of windfall and landslide  
   
  <mark>through a calculus</mark>
+ 
  <mark>of good hours,</mark>
+ 
 clutching at the tear  
   
 in his birthday shirt  
@@ -38,7 +40,9 @@ as at a hole
 in his mildewed horoscope,  
   
  <mark>squinting at the parallax</mark>
+ 
  <mark>of black planets,</mark>
+ 
 his Tiger, his Hare  
   
 moving in Sanskrit zodiacs,  
