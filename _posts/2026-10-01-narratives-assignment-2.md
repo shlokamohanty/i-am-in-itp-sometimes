@@ -122,12 +122,12 @@ tw-story, tw-passage, .passage {
 
 Illustrations
 
-![illustration-1](/i-am-in-itp-sometimes/assets/images/IMG_2673.jpg])
+![illustration-1](/i-am-in-itp-sometimes/assets/images/IMG_2673.jpg)
 
-![illustration-2](/i-am-in-itp-sometimes/assets/images/IMG_2672.jpg])
+![illustration-2](/i-am-in-itp-sometimes/assets/images/IMG_2672.jpg)
 
-![illustration-3](/i-am-in-itp-sometimes/assets/images/IMG_2671.jpg])
+![illustration-3](/i-am-in-itp-sometimes/assets/images/IMG_2671.jpg)
 
-![illustration-4](/i-am-in-itp-sometimes/assets/images/IMG_2670.jpg])
+![illustration-4](/i-am-in-itp-sometimes/assets/images/IMG_2670.jpg)
 
-![illustration-5](/i-am-in-itp-sometimes/assets/images/IMG_2669.jpg])
+![illustration-5](/i-am-in-itp-sometimes/assets/images/IMG_2669.jpg)
