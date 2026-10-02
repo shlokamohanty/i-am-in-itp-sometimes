@@ -3,7 +3,7 @@ layout: post
 title: sketch 2
 subtitle: ""
 date: 2026-09-28
-tags: thesis-ongoing
+tags: narratives-ongoing
 ---
 
 [Sketch two](https://shlokamohanty.github.io/search/)
