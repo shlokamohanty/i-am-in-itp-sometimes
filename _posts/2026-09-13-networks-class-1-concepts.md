@@ -10,6 +10,8 @@ I noticed, I didn't go over the readings before the first class. I'm getting use
 
 ---
 
+### Geography of the Internet
+
 > A **network** is a collection of things connected to each other. Put more formally, networks are usually described as a series of _nodes_ connected by _links_.
 
 > A node can be anything or anyone that can communicate with other nodes over the links between them.

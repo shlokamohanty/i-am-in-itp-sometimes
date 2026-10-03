@@ -1,6 +1,6 @@
 ---
 layout: post
-title: class four
+title: class three
 subtitle: ""
 date: 2026-09-25
 tags: narratives-past
