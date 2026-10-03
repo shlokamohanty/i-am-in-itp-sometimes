@@ -27,7 +27,7 @@ But I got an idea from it. I can make this with stacked gears and a thick gear w
 
 ![jupiter-plotter](/i-am-in-itp-sometimes/assets/images/jupiter-plotter.jpg)
 
-I wish I could spend a lot more time on this. It's what I felt last semester: the pressure for finishing projects and assignments on time, that I ended up using AI extensively for two projects last semester. 
+I wish I could spend a lot more time on this. It's what I felt last semester: the pressure for finishing projects and assignments on time, that I ended up using Claude extensively for two projects last semester. 
 
 ![kezia-message](/i-am-in-itp-sometimes/assets/images/kezia-message.jpg)
 
@@ -39,7 +39,7 @@ This is really testing my spatial IQ.
 
 I think there is a better way to do this.
 
-Okay, yes. There is a better way to do this. Much better way. That's not AI.
+Okay, yes. There is a better way to do this. Much better way. That's not Claude.
 
 I found [this](https://mathematicsforstudents.wordpress.com/2014/11/08/spirograph/).
 
