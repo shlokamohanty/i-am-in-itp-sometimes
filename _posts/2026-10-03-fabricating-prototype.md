@@ -33,7 +33,25 @@ I wish I could spend a lot more time on this. It's what I felt last semester: th
 
 Kezia made me laugh. 
 
-My friend in Boston taught me this term called [`P(doom)`](https://en.wikipedia.org/wiki/P(doom)). This is increasing my P(doom) value.
+My friend in Boston taught me this term called [`P(doom)`](https://en.wikipedia.org/wiki/P(doom)). This is increasing my `P(doom)` value.
+
+This is really testing my spatial IQ.
+
+I think there is a better way to do this.
+
+Okay, yes. There is a better way to do this. Much better way. That's not AI.
+
+I found [this](https://mathematicsforstudents.wordpress.com/2014/11/08/spirograph/).
+
+From there this [website](https://inspiral-web.nathanfriend.com/) is extremely helpful.
+
+![mars-gears](/i-am-in-itp-sometimes/assets/images/mars-gears.jpg)
+56-fixed. 64-rotating. This is closest to Mars.
+
+![venus-gears](/i-am-in-itp-sometimes/assets/images/venus-gears.jpg)
+40-fixed. 64-rotating. This is closest to Venus.
+
+From here, I can do what Matt told me during 'Energy!' and also mentioned last class is taking this to Illustrator. Then, I can laser cut it and test it out.
 
 ---
 
