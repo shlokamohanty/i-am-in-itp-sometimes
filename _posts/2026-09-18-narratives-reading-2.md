@@ -1,6 +1,6 @@
 ---
 layout: post
-title: readings 2
+title: readings two
 subtitle: ""
 date: 2026-09-18
 tags: narratives-ongoing

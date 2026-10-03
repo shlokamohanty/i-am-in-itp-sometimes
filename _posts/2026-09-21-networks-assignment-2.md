@@ -1,6 +1,6 @@
 ---
 layout: post
-title: assignment 2 and readings
+title: assignment two and readings
 subtitle: ""
 date: 2026-09-21
 tags: networks-past

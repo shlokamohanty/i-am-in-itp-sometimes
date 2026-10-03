@@ -1,6 +1,6 @@
 ---
 layout: post
-title: assignment 2
+title: assignment two
 subtitle: ""
 date: 2026-09-19
 tags:

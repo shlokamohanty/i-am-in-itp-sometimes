@@ -75,7 +75,7 @@ to a sentence.
 
 ---
 
-While I didn’t quite understand it in the through line of Astronomer by A. K. Ramanujan, or maybe that’s the point. I was telling Gabe today that words themselves have underlying meanings, and poetry on top of it, can be a lot. I enjoy that, though sometimes the amalgamation of words — a web of metaphors. Hence, I liked A. K. Ramanujan's other poem, 'On The Death Of A Poem'.
+While I didn’t quite understand the through line of Astronomer by A. K. Ramanujan, or maybe that’s the point. I was telling Gabe today that words themselves have underlying meanings, and poetry on top of it, can be a lot. I enjoy that, though sometimes the amalgamation of words — a web of metaphors. Hence, I liked A. K. Ramanujan's other poem, 'On The Death Of A Poem'.
 
 Something about the difference between astrology and astronomy reminded me of Ptolemy’s epicycles specifically the highlighted sections. There's something there that feels like this importance of being wrong. It's, I guess, in a way, that the progression of science has been about being proven wrong.
 

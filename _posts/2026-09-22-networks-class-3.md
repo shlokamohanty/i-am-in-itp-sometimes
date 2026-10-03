@@ -1,6 +1,6 @@
 ---
 layout: post
-title: class 3
+title: class three
 subtitle: ""
 date: 2026-09-22
 tags: networks-past

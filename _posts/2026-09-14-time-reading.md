@@ -1,6 +1,6 @@
 ---
 layout: post
-title: reading before class 1
+title: reading before class one
 subtitle: ""
 date: 2026-09-14
 tags: time-past

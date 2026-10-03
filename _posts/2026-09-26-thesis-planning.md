@@ -6,18 +6,22 @@ date: 2026-09-26
 tags: thesis-ongoing
 ---
 
-I don't know much about radios. But I'm intrigued by them.
+Things that I think I need to research:
 
-I have made an analogue radio receiver.
+- Differences between a tool, instrument, equipment, device, appliance, and apparatus
 
-I am figuring out how to make an analogue radio receiver.
+Things to research from Tom:
 
-I want to make a digital FM radio:
-[https://www.instructables.com/Digital-FM-Radio/](https://www.instructables.com/Digital-FM-Radio/)
-[https://www.mathertel.de/Arduino/Radio](https://www.mathertel.de/Arduino/Radio)
+- How imagery is created from radio waves?
+- What is a radar image?
+- Understanding how television works?
+    - Time of blank space
+    - Caption
+- How can we get non-experts to understand radio images?
+    - Explain to non-experts what is going on?
+- Technology is doing some interpretation for you, and you are doing some interpretation. 
+- What are good things about data visualisations?
+- Interoception and our limits of senses.
+- What does it mean to interpret it right, or interpret it wrong?
 
-Quite literally going to do something interactive-telecommunications-based.
-
----
-
-I want to particularly explore imagery with radio as opposed to sound.
+Things to research from Nikolai:

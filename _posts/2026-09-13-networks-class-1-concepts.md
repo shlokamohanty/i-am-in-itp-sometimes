@@ -1,6 +1,6 @@
 ---
 layout: post
-title: class 1 concepts
+title: class one concepts
 subtitle: ""
 date: 2026-09-13
 tags: networks-ongoing

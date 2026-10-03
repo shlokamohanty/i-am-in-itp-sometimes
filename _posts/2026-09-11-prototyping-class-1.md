@@ -1,6 +1,6 @@
 ---
 layout: post
-title: class 1 and initial project ideation
+title: class one and initial project ideation
 subtitle: ""
 date: 2026-09-11
 tags: prototyping-past

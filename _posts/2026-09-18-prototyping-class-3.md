@@ -1,6 +1,6 @@
 ---
 layout: post
-title: class 3 and continued project ideation
+title: class three and continued project ideation
 subtitle: ""
 date: 2026-09-18
 tags: prototyping-ongoing

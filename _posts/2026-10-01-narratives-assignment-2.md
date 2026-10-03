@@ -1,9 +1,9 @@
 ---
 layout: post
-title: sketch 2
+title: sketch two
 subtitle: ""
 date: 2026-09-28
-tags: narratives-ongoing
+tags: narratives-past
 ---
 
 [Sketch two](https://shlokamohanty.github.io/search/)
@@ -65,7 +65,6 @@ Maybe because my mother, growing up, told me to search for three stars in the sk
 But I think it’s rather hard to find three stars in Mumbai skies.
 Some of them turn out to be planes. 
 Some of them turn out to be faint light from a distant building. A smudge of gray on the building.
-
 
 In a world of what-ifs, it’s the confirmation of luck, she said. 
 I don’t believe that finding three stars in the sky would make one lucky.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: class 2
+title: class two
 subtitle: ""
 date: 2026-09-11
 tags: prototyping-past
