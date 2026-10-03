@@ -3,7 +3,7 @@ layout: post
 title: assignment three and readings
 subtitle: ""
 date: 2026-09-28
-tags: networks-ongoing
+tags: networks-past
 ---
 
 ![wireshark](/i-am-in-itp-sometimes/assets/images/wireshark.jpg)

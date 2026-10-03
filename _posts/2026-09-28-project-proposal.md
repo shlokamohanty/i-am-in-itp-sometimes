@@ -4,7 +4,7 @@ title: project proposal
 subtitle: ""
 date: 2026-09-28
 tags:
-  - fabrication-ongoing
+  - fabrication-past
 ---
 
 Over the summer, I was reading A.K. Ramanujan's 'The Interior Landscape,' which contains classical Tamil love poems. They were these poems, called *akam* poetry, which was about the inner world, not just action or experience. I thought most of them were actually quite funny. Since these poems are translated, the visual shape of the poems indicated the design of the original poem.

@@ -40,7 +40,7 @@ What I liked about working with ‘Trash!’ is that, in some ways, I went deep 
 
 <mark>I want to be a professor when I’m older. There’s this philosophical idea that you can’t fully understand another person, and the other person can’t either. From talking to Tom, I realised that even though that is true in a larger context, in simplicity, as a professor, how do you make someone else understand a concept? You simplify the concept, and in order to simplify a concept, you need to understand it deeply enough to explain it to another person. That’s another way to breach that isolation, is to explain with simplicity. My exploration can be such that it is representative of that. Understanding and thus learning about a complex technology, to explain in simple terms.</mark>
 
-I have an affinity for radios. One of my first memories growing up is wearing a yellow dress and either putting a floppy disk or a CD into a computer. I wonder what the purpose of it was. I remember Gabe and James were talking about that as a method to access the internet; what if I was trying to do that? And it made me wonder about radio frequencies. I’ve listened to the radio every morning growing up, as a means to keep time.
+I have an affinity for radios. One of my first memories growing up is wearing a yellow dress and either putting a floppy disk or a CD into a CPU. I wonder what the purpose of it was. I remember Gabe and James were talking about that as a method to access the internet; what if I was trying to do that? And it made me wonder about radio frequencies. I’ve listened to the radio every morning growing up, as a means to keep time.
 
 I’ve been deeply intrigued by astrophysics and photography growing up. Most astro-imagery is done using radio telescopes.
 
