@@ -28,7 +28,7 @@ There is a side of this program that is centred around more of a technical explo
 
 I want to enjoy the process of my thesis. Have something that I can look at and continue looking at after presenting without feeling rather low. 
 
-Nikolai did say my writing is good, so did Alanna. But I am feeling quite drained of writing — it’s heavy. I think maybe it’s okay to step back from it. I think I want to write more in private. As advised by Tom too to continue writing in private.
+Nikolai did say my writing is good, so did Alanna. But I am feeling quite drained from writing — it’s heavy. I think maybe it’s okay to step back from it. I think I want to write more in private. As advised by Tom too to continue writing in private.
 
 Tom said to make use of my previous background. Nikolai also showed confidence in my technical abilities. 
 

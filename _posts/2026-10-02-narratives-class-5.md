@@ -1,9 +1,9 @@
 ---
 layout: post
-title: class four
+title: class five
 subtitle: ""
 date: 2026-10-02
-tags: narratives-ongoing
+tags: narratives-past
 ---
 
 Nested structures seem to become more specific as they unfold
