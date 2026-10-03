@@ -26,7 +26,7 @@ Tom mentioned that it is okay if people around me are doing that; I can enjoy an
 
 There is a side of this program that is centred around more of a technical exploration, as opposed to an artistic one. I think I have a technical sensibility.
 
-I want to enjoy the process of my thesis. Have something that I can look at and continue looking at after presenting without feeling rather meh. 
+I want to enjoy the process of my thesis. Have something that I can look at and continue looking at after presenting without feeling rather low. 
 
 Nikolai did say my writing is good, so did Alanna. But I am feeling quite drained of writing — it’s heavy. I think maybe it’s okay to step back from it. I think I want to write more in private. As advised by Tom too to continue writing in private.
 
