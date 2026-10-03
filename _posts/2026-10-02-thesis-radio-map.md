@@ -2,7 +2,7 @@
 layout: post
 title: radio map
 subtitle: ""
-date: 2026-09-26
+date: 2026-10-02
 tags: thesis-ongoing
 ---
 

@@ -6,11 +6,11 @@ date: 2026-10-01
 tags: thesis-ongoing
 ---
 
-I think I don’t feel ready to possess the artistic responsibility to make expressive work; I don't know if I ever will. It also feels draining to present that kind of work. And the presentation, in the context of art, is, I think, what makes it art.
+I think I don’t feel ready to take on the artistic responsibility to make expressive work; I don't know if I ever will. It also feels draining to present that kind of work. And the presentation, in the context of art, is, I think, what makes it art.
 
 I have a need for personal expression, but it’s often a form of release. And, my thesis cannot be that. And often when I make work as such, I don’t really like looking back at it. I want to be able to look back at my work. I want to make this in a manner of a more scientific and technical research. Focus on things to investigate that are not in my feelings. The personal expression — for myself.
 
-I think a question that came up while talking to Tom yesterday and while talking to Ryan last week was, <mark>‘who is my audience?’</mark> Tom mentioned technically thesis is technically an artificial audience. i don’t know who i’m making for yet. I don’t quite think you can make things without an audience. You need an audience to critique you and change your perspective. Tom mentioned think about your friends — something he said in class too.
+I think a question that came up while talking to Tom yesterday and while talking to Ryan last week was, <mark>‘who is my audience?’</mark> Tom mentioned thesis is technically an artificial audience. I don’t know who I’m making for yet. I don’t quite think you can make things without an audience. You need an audience to critique you and change your perspective. Tom mentioned think about your friends — something he said in class too.
 
 So at the end it comes down to what kind of work is it that I want to make, that I’m ready for it to be audited by an audience, right? I don’t think the work I make for the purposes of an emotional release I want it to be audited. I guess, for those, I’m the only person who can critique it.
 
@@ -24,7 +24,7 @@ If anything later on in life, I don’t think I see myself with the label of an 
 
 Tom mentioned that it is okay if people around me are doing that; I can enjoy and appreciate their work, but I don’t have to make it if I don’t feel like it. Art is important — a language of sorts; human experience. But I think I’m better at asking the questions and being an audience to artists, as opposed to being one.
 
-There is a side of this program that is centred around more of a technical exploration, as opposed to an artistic one.
+There is a side of this program that is centred around more of a technical exploration, as opposed to an artistic one. I think I have a technical sensibility.
 
 I want to enjoy the process of my thesis. Have something that I can look at and continue looking at after presenting without feeling rather meh. 
 

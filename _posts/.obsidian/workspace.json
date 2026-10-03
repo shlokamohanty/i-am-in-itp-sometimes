@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "2026-09-26-thesis-research.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "2026-09-26-thesis-research"
+            }
+          },
+          {
+            "id": "7123a42384a47778",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "2026-10-01-thesis-direction.md",
                 "mode": "source",
                 "source": true
@@ -21,7 +35,8 @@
               "title": "2026-10-01-thesis-direction"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -201,34 +216,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "726f2694e09e85c9",
+  "active": "7123a42384a47778",
   "lastOpenFiles": [
-    "2021-03-08-blog-post-title-from-file-name.md",
-    "2026-10-01-thesis-direction.md",
-    "2026-10-02-narratives-class-5.md",
-    "2026-10-02-thesis-radio-map.md",
-    "2026-09-26-thesis-planning.md",
-    "2026-09-26-thesis-research.md",
-    "2026-09-28-thesis-drawings.md",
-    "2026-10-02-fabricating-class-4.md",
-    "2026-10-01-narratives-assignment-2.md",
-    "2026-09-28-penguins.md",
     "2026-09-28-project-proposal.md",
-    "2026-09-18-prototyping-class-3.md",
+    "2026-09-28-penguins.md",
     "2026-09-28-networks-assignment-3.md",
-    "2026-09-19-fabricating-assignment-2.md",
-    "2026-09-21-networks-assignment-2.md",
-    "2026-09-22-fabricating-class-3.md",
-    "2026-09-22-networks-class-3.md",
-    "2026-09-25-narratives-class-3.md",
-    "2026-09-13-networks-class-1-concepts.md",
+    "2026-09-28-narratives-assignment-2.md",
+    "2026-09-26-thesis-research.md",
+    "2026-09-26-thesis-planning.md",
+    "2026-10-02-thesis-radio-map.md",
+    "2026-10-02-narratives-class-5.md",
+    "2026-10-02-ham-radio.md",
+    "2026-09-28-thesis-drawings.md",
+    "2026-10-01-thesis-direction.md",
+    "2026-10-02-fabricating-class-4.md",
+    "2021-03-08-blog-post-title-from-file-name.md",
+    "2026-09-11-fabricating-class-1.md",
+    "2026-09-11-networks-class-1.md",
+    "2026-09-11-prototyping-class-1.md",
+    "2026-09-11-prototyping-class-2.md",
+    "2026-09-13-fabricating-assignment-1.md",
+    "2026-09-13-fabricating-automaton.md",
+    "2026-09-13-hair.md",
     "2026-09-13-networks-assignment-1.md",
+    "2026-09-13-networks-class-1-concepts.md",
     "2026-09-14-narratives-class-1.md",
     "2026-09-14-time-reading.md",
     "2026-09-15-automatons-and-clockwork.md",
     "2026-09-15-networks-class-2.md",
-    "2026-09-15-networks-jupyter-notebook.md",
-    "2026-09-18-fabricating-class-2.md",
     "IMG_2673.jpg",
     "IMG_2672.jpg",
     "IMG_2671.jpg",

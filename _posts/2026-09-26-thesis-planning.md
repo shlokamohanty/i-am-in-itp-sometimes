@@ -9,6 +9,7 @@ tags: thesis-ongoing
 Things that I think I need to research:
 
 - Differences between a tool, instrument, equipment, device, appliance, and apparatus
+- Ham radio license
 
 Things to research from Tom:
 
@@ -25,3 +26,11 @@ Things to research from Tom:
 - What does it mean to interpret it right, or interpret it wrong?
 
 Things to research from Nikolai:
+
+- Camera Lucida by Roland Barthes
+- SDR module
+- ~~Long range radio certificate~~
+- WiFi and WiFi sensing
+- Radio and Medicine
+- Sans Soleil by Chris Marker
+- Nostalgia for the Light
